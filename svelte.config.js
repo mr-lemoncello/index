@@ -11,9 +11,6 @@ kit: {
  adapter: adapter({
    fallback: '404.html'
  }),
- paths: {
-   base: '/mr-lemoncello.github.io'
- }
 }
 };
 
