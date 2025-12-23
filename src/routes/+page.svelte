@@ -4,13 +4,21 @@
   import file_480 from "$lib/assets/file_480.png";
   import poetry1 from "$lib/assets/poetry1.png";
   import resume from "$lib/assets/resume.png";
-  import { browser } from "$app/environment";
+
   import { onMount } from "svelte";
-  onMount(() => {
-    if (browser) {
-      console.log(localStorage.getItem("user"));
+
+  let discordUserState: string | null = null;
+  onMount(async () => {
+    try {
+      const response = await fetch(`https://api.lanyard.rest/v1/users/1250607214180438016`);
+      const data = await response.json();
+
+      discordUserState = data.data.activities[0]?.state;
+    } catch (error) {
+      console.error("Error fetching user data:", error);
     }
   });
+
   let v = 0;
   let u = 0;
   let w = 0;
@@ -173,6 +181,7 @@
 <h1 class="text-white font-mono font-semibold text-3xl mt-1.5 mb-1.5">
   Vikas Banerjee Murthy
 </h1>
+<em class="text-gray-400 font-mono text-sm">{discordUserState}</em>
 <link rel="image" href={file_480} />
 <div
   class="inline-flex flex-row gap-1 justify-between content-stretch w-full h-auto
