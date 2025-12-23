@@ -21,7 +21,7 @@ jobs:
         run: bun i
 
       - name: build
-        env:
+        env: --source ./docs
 BASE_PATH: '/${{ github.event.repository.name }}'
 :
       run: |
