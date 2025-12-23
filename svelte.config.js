@@ -3,18 +3,18 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: vitePreprocess(),
-  compilerOptions: {
-    customElement: true
-  },
-  kit: {
-    adapter: adapter({
-      fallback: '404.html'
-    }),
-    paths: {
-      base: '/mr-lemoncello.github.io'
-    }
-  }
+preprocess: vitePreprocess(),
+compilerOptions: {
+ customElement: true
+},
+kit: {
+ adapter: adapter({
+   fallback: '404.html'
+ }),
+ paths: {
+   base: '/mr-lemoncello.github.io'
+ }
+}
 };
 
 export default config;
