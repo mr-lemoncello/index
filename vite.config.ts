@@ -6,6 +6,6 @@ export default defineConfig({
     plugins: [sveltekit(), tailwindcss()],
     base: './',
     build: {
-        outDir: 'docs',
+        outDir: '',
     }
 });
