@@ -1,4 +1,4 @@
-<svelte:options customElement="my-element" />
+<svelte:options customElement="my-element"/>
 
 <script lang="ts">
   import file_480 from "$lib/assets/file_480.png";
