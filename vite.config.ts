@@ -4,7 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [sveltekit(), tailwindcss()],
-  base: '/mr-lemoncello.github.io/',
   build: {
     outDir: 'build'
   }
