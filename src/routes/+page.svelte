@@ -178,7 +178,6 @@
       alert("A network error occurred. Please try again later.");
     }
   }
-  export const prerender = true;
 </script>
 
 <h1 class="text-white font-mono font-semibold text-3xl mt-1.5 mb-1.5">
