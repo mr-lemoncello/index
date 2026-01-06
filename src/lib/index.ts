@@ -10,19 +10,24 @@ let name = "";
 let email = "";
 let on1540 = false;
 let isBuyer = false;
-let timeHere = 0;
+let time = 0;
 
 // returns 0 → night, 1 → noon
-export function getDayFactor(t: number) {
-    return (Math.cos((t / 300) * Math.PI + Math.PI) + 1) / 2;
+export function getDayFactor(time: number) {
+  const result = (Math.cos((time / 10) * Math.PI) + 1) / 2;
+  console.log(result);
+  return result;
 }
 
 export const interval = setInterval(() => {
-    timeHere = timeHere + 1;
-    State.update(state => ({
-        ...state,
-        timeHere
-    }));
+  time = time + 1;
+
+  const dayFactor = getDayFactor(time);
+
+  State.update(state => ({
+    ...state,
+    dayFactor
+  }));
 }, 1000);
 
 export function change_color(name: string, color: string) {
@@ -643,6 +648,6 @@ export const State = writable({
     email: "",
     on1540: false,
     isBuyer: false,
-    timeHere: 0,
+    dayFactor: 0,
     song: "none",
 });

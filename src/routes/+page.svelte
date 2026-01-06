@@ -1,7 +1,6 @@
 <svelte:options customElement="my-element" />
 
 <script lang="ts">
-  import { getDayFactor } from "$lib/index";
   import { change_color } from "$lib/index";
   import { toggle } from "$lib/index";
   import { mybutton_a1 } from "$lib/index";
@@ -16,7 +15,7 @@
   let email: string = $State.email;
   let on1540: boolean = $State.on1540;
   let isBuyer: boolean = $State.isBuyer;
-  let timeHere: number = $State.timeHere;
+  let t: number = $State.dayFactor;
   let song: string = $State.song;
 
   $: song = $State.song;
@@ -126,7 +125,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       rgba(54, 147, 235, 0.75),
       rgba(20, 79, 128, 0.65)
     );
-    opacity: {0.25 + Math.pow(getDayFactor(timeHere), 1.4) * 0.425};
+    opacity: {0.25 + Math.pow((t), 1.4) * 0.425};
   "
 ></div>
 
@@ -144,7 +143,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
         rgba(180, 210, 255, 0.35),
         transparent 60%
       );
-    opacity: {1 - getDayFactor(timeHere)};
+    opacity: {1 - (t)};
   "
 ></div>
 
@@ -159,7 +158,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     );
     opacity: {0.5 *
     Math.pow(
-      -4 * (getDayFactor(timeHere) - 0.0975) * (getDayFactor(timeHere) + 0.025),
+      -4 * ((t) - 0.0975) * ((t) + 0.025),
       4,
     )};
     mix-blend-mode: soft-light;
@@ -170,7 +169,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   class="fixed inset-0 pointer-events-none transition-opacity duration-3000 -z-2"
   style="
     background: rgba(255, 255, 255, 0.25);
-    opacity: {Math.pow(getDayFactor(timeHere), 1.6) * 0.45};
+    opacity: {Math.pow((t), 1.6) * 0.45};
   "
 ></div>
 
