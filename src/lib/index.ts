@@ -19,6 +19,10 @@ export function getDayFactor(t: number) {
 
 export const interval = setInterval(() => {
     timeHere = timeHere + 1;
+    State.update(state => ({
+        ...state,
+        timeHere
+    }));
 }, 1000);
 
 export function change_color(name: string, color: string) {
@@ -556,10 +560,7 @@ export async function initPage() {
     if (skipped) return;
     skipped = true;
 
-    // Remove the absolute typewriter layer
     root.remove();
-
-    // Reveal ghost content
     ghost.classList.remove("invisible");
   };
 
@@ -637,7 +638,6 @@ export async function fetchDiscordStatus(fetchFn: typeof fetch) {
 
 import { writable } from "svelte/store";
 
-// Create writable stores for functions
 export const State = writable({
     name: "",
     email: "",
