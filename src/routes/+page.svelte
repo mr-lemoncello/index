@@ -41,52 +41,33 @@
   import { onMount } from "svelte";
   import { initPage } from "$lib/index";
 
-  if (typeof window !== "undefined" && typeof document !== "undefined") {
-    function cacheImages(array: Array<string>) {
-      if (!cacheImages.list) {
-        cacheImages.list = [];
-      }
-
-      var list = cacheImages.list;
-
-      for (var i = 0; i < array.length; i++) {
-        var img = new Image();
-
-        // Using arrow function so that `this` is bound to `img`
-        img.onload = () => {
-          var index = list.indexOf(img);
-          if (index !== -1) {
-            // Remove image from the array once it's loaded
-            list.splice(index, 1);
-          }
-        };
-
-        list.push(img);
-        img.src = array[i];
-      }
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+  function cacheImages(array: Array<string>) {
+    if (!cacheImages.list) {
+      cacheImages.list = [];
     }
 
-    cacheImages.list = [] as HTMLImageElement[];
+    var list = cacheImages.list;
 
-    cacheImages([
-      file_480,
-      poetry1,
-      poetry1back,
-      poetry2,
-      poetry2back,
-      poetry3,
-      poetry3back,
-      poetry4,
-      poetry4back,
-      poetry5,
-      poetry5back,
-      poetry6,
-      poetry6back,
-      resume,
-      id_1,
-      id_2,
-    ]);
+    for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+
+      img.onload = () => {
+        var index = list.indexOf(img);
+        if (index !== -1) {
+          list.splice(index, 1);
+        }
+      };
+
+      list.push(img);
+      img.src = array[i];
+    }
   }
+
+  cacheImages.list = [] as HTMLImageElement[];
+
+  cacheImages([file_480, poetry1, poetry1back, poetry2, poetry2back, poetry3, poetry3back, poetry4, poetry4back, poetry5, poetry5back, poetry6, poetry6back, resume, id_1, id_2]);
+}
 
   export let data;
 
@@ -138,7 +119,7 @@
 
   // returns 0 → night, 1 → noon
   function getDayFactor(time: number) {
-    const result = (Math.cos((time / 10) * Math.PI) + 1) / 2;
+    const result = ((1 - Math.cos((time * 2 * Math.PI) / 500)) / 2);
     return result;
   }
 
@@ -146,6 +127,7 @@
     time = time + 1;
     dayFactor = getDayFactor(time);
   }, 1000);
+
 </script>
 
 <div
@@ -156,7 +138,7 @@
       rgba(54, 147, 235, 0.75),
       rgba(20, 79, 128, 0.65)
     );
-    opacity: {0.25 + Math.pow(dayFactor, 1.4) * 0.425};
+    opacity: {0.25 + Math.pow((dayFactor), 1.4) * 0.425};
   "
 ></div>
 
@@ -174,9 +156,11 @@
         rgba(180, 210, 255, 0.35),
         transparent 60%
       );
-    opacity: {1 - dayFactor};
+    opacity: {3 * Math.pow((1 - (dayFactor)), 2)};
   "
 ></div>
+
+
 
 <div
   class="fixed inset-0 pointer-events-none transition-opacity duration-3500 -z-2"
@@ -187,9 +171,7 @@
       rgba(255, 200, 160, 0.4),
       transparent 60%
     );
-    opacity: {0.5 *
-    Math.pow(-4 * (dayFactor - 0.0975) * (dayFactor + 0.025), 4)},
-    mix-blend-mode: soft-light;
+    opacity: {0.25 * Math.pow((dayFactor), 1.4)};
   "
 ></div>
 
@@ -197,7 +179,7 @@
   class="fixed inset-0 pointer-events-none transition-opacity duration-3000 -z-2"
   style="
     background: rgba(255, 255, 255, 0.25);
-    opacity: {Math.pow(dayFactor, 1.6) * 0.45};
+    opacity: {Math.pow((dayFactor), 1.6) * 0.45};
   "
 ></div>
 
