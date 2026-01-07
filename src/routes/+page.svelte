@@ -41,35 +41,52 @@
   import { onMount } from "svelte";
   import { initPage } from "$lib/index";
 
-if (typeof window !== "undefined" && typeof document !== "undefined") {
-  function cacheImages(array: Array<string>) {
-    if (!cacheImages.list) {
-      cacheImages.list = [];
+  if (typeof window !== "undefined" && typeof document !== "undefined") {
+    function cacheImages(array: Array<string>) {
+      if (!cacheImages.list) {
+        cacheImages.list = [];
+      }
+
+      var list = cacheImages.list;
+
+      for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+
+        // Using arrow function so that `this` is bound to `img`
+        img.onload = () => {
+          var index = list.indexOf(img);
+          if (index !== -1) {
+            // Remove image from the array once it's loaded
+            list.splice(index, 1);
+          }
+        };
+
+        list.push(img);
+        img.src = array[i];
+      }
     }
 
-    var list = cacheImages.list;
+    cacheImages.list = [] as HTMLImageElement[];
 
-    for (var i = 0; i < array.length; i++) {
-      var img = new Image();
-
-      // Using arrow function so that `this` is bound to `img`
-      img.onload = () => {
-        var index = list.indexOf(img);
-        if (index !== -1) {
-          // Remove image from the array once it's loaded
-          list.splice(index, 1);
-        }
-      };
-
-      list.push(img);
-      img.src = array[i];
-    }
+    cacheImages([
+      file_480,
+      poetry1,
+      poetry1back,
+      poetry2,
+      poetry2back,
+      poetry3,
+      poetry3back,
+      poetry4,
+      poetry4back,
+      poetry5,
+      poetry5back,
+      poetry6,
+      poetry6back,
+      resume,
+      id_1,
+      id_2,
+    ]);
   }
-
-  cacheImages.list = [] as HTMLImageElement[];
-
-  cacheImages([file_480, poetry1, poetry1back, poetry2, poetry2back, poetry3, poetry3back, poetry4, poetry4back, poetry5, poetry5back, poetry6, poetry6back, resume, id_1, id_2]);
-}
 
   export let data;
 
@@ -129,7 +146,6 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     time = time + 1;
     dayFactor = getDayFactor(time);
   }, 1000);
-
 </script>
 
 <div
@@ -140,7 +156,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       rgba(54, 147, 235, 0.75),
       rgba(20, 79, 128, 0.65)
     );
-    opacity: {0.25 + Math.pow((dayFactor), 1.4) * 0.425};
+    opacity: {0.25 + Math.pow(dayFactor, 1.4) * 0.425};
   "
 ></div>
 
@@ -158,7 +174,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
         rgba(180, 210, 255, 0.35),
         transparent 60%
       );
-    opacity: {1 - (dayFactor)};
+    opacity: {1 - dayFactor};
   "
 ></div>
 
@@ -172,10 +188,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       transparent 60%
     );
     opacity: {0.5 *
-    Math.pow(
-      (-4 * ((dayFactor) - 0.0975) * ((dayFactor) + 0.025)),
-      4
-    )},
+    Math.pow(-4 * (dayFactor - 0.0975) * (dayFactor + 0.025), 4)},
     mix-blend-mode: soft-light;
   "
 ></div>
@@ -184,7 +197,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   class="fixed inset-0 pointer-events-none transition-opacity duration-3000 -z-2"
   style="
     background: rgba(255, 255, 255, 0.25);
-    opacity: {Math.pow((dayFactor), 1.6) * 0.45};
+    opacity: {Math.pow(dayFactor, 1.6) * 0.45};
   "
 ></div>
 
