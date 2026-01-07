@@ -15,10 +15,11 @@
   let email: string = $State.email;
   let on1540: boolean = $State.on1540;
   let isBuyer: boolean = $State.isBuyer;
-  let t: number = $State.dayFactor;
   let song: string = $State.song;
 
   $: song = $State.song;
+
+  let dayFactor = 0;
 
   import file_480 from "$lib/assets/file_480.webp";
   import poetry1 from "$lib/assets/poetry1.webp";
@@ -115,6 +116,20 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       Kolkatas_Pollution_Crisis = module.default;
     }
   }
+
+  let time = 0;
+
+  // returns 0 → night, 1 → noon
+  function getDayFactor(time: number) {
+    const result = (Math.cos((time / 10) * Math.PI) + 1) / 2;
+    return result;
+  }
+
+  setInterval(() => {
+    time = time + 1;
+    dayFactor = getDayFactor(time);
+  }, 1000);
+
 </script>
 
 <div
@@ -125,7 +140,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       rgba(54, 147, 235, 0.75),
       rgba(20, 79, 128, 0.65)
     );
-    opacity: {0.25 + Math.pow((t), 1.4) * 0.425};
+    opacity: {0.25 + Math.pow((dayFactor), 1.4) * 0.425};
   "
 ></div>
 
@@ -143,7 +158,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
         rgba(180, 210, 255, 0.35),
         transparent 60%
       );
-    opacity: {1 - (t)};
+    opacity: {1 - (dayFactor)};
   "
 ></div>
 
@@ -158,9 +173,9 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     );
     opacity: {0.5 *
     Math.pow(
-      -4 * ((t) - 0.0975) * ((t) + 0.025),
-      4,
-    )};
+      (-4 * ((dayFactor) - 0.0975) * ((dayFactor) + 0.025)),
+      4
+    )},
     mix-blend-mode: soft-light;
   "
 ></div>
@@ -169,7 +184,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   class="fixed inset-0 pointer-events-none transition-opacity duration-3000 -z-2"
   style="
     background: rgba(255, 255, 255, 0.25);
-    opacity: {Math.pow((t), 1.6) * 0.45};
+    opacity: {Math.pow((dayFactor), 1.6) * 0.45};
   "
 ></div>
 

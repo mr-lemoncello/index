@@ -10,25 +10,24 @@ let name = "";
 let email = "";
 let on1540 = false;
 let isBuyer = false;
-let time = 0;
 
-// returns 0 → night, 1 → noon
-export function getDayFactor(time: number) {
-  const result = (Math.cos((time / 10) * Math.PI) + 1) / 2;
-  console.log(result);
-  return result;
-}
-
-export const interval = setInterval(() => {
-  time = time + 1;
-
-  const dayFactor = getDayFactor(time);
-
-  State.update(state => ({
-    ...state,
-    dayFactor
-  }));
-}, 1000);
+import blindsided_surveillance from "$lib/assets/blindedsided_surveillance.mp3";
+import crows_at_duskfall from "$lib/assets/Crows at Duskfall.mp3";
+import film_soundtrack from "$lib/assets/Flim Soundtrack.mp3";
+import for_my_own_sake from "$lib/assets/For My Own Sake.mp3";
+import garageband_blues from "$lib/assets/GarageBand Blues.mp3";
+import garageille_o_neal from "$lib/assets/Garageille O_Neal.mp3";
+import garlic_bread_on_venus from "$lib/assets/Garlic Bread on Venus.mp3";
+import i_wash_the_sheets from "$lib/assets/I Wash The Sheets.mp3";
+import lord_of_the_flies_chapter_one from "$lib/assets/lotf chapter 1.mp3";
+import monotony from "$lib/assets/Monotony.mp3";
+import no_vows_no_veins from "$lib/assets/No Vows, No Veins.mp3";
+import pain_shame_memories from "$lib/assets/Pain, Shame, Memories.mp3";
+import roll_credits from "$lib/assets/credits theme.mp3";
+import serenade_of_confession from "$lib/assets/Serenade of Confession.mp3";
+import spirals_and_stars from "$lib/assets/Spirals and Stars.mp3";
+import the_threads from "$lib/assets/The Threads.mp3";
+import tungsten_rain from "$lib/assets/Tungsten Rain.mp3";
 
 export function change_color(name: string, color: string) {
     const fn_name = document.getElementById(name);
@@ -310,24 +309,6 @@ export async function output() {
         alert("A network error occurred. Please try again later.");
     }
 }
-
-import blindsided_surveillance from "$lib/assets/blindedsided_surveillance.mp3";
-import crows_at_duskfall from "$lib/assets/Crows at Duskfall.mp3";
-import film_soundtrack from "$lib/assets/Flim Soundtrack.mp3";
-import for_my_own_sake from "$lib/assets/For My Own Sake.mp3";
-import garageband_blues from "$lib/assets/GarageBand Blues.mp3";
-import garageille_o_neal from "$lib/assets/Garageille O_Neal.mp3";
-import garlic_bread_on_venus from "$lib/assets/Garlic Bread on Venus.mp3";
-import i_wash_the_sheets from "$lib/assets/I Wash The Sheets.mp3";
-import lord_of_the_flies_chapter_one from "$lib/assets/lotf chapter 1.mp3";
-import monotony from "$lib/assets/Monotony.mp3";
-import no_vows_no_veins from "$lib/assets/No Vows, No Veins.mp3";
-import pain_shame_memories from "$lib/assets/Pain, Shame, Memories.mp3";
-import roll_credits from "$lib/assets/credits theme.mp3";
-import serenade_of_confession from "$lib/assets/Serenade of Confession.mp3";
-import spirals_and_stars from "$lib/assets/Spirals and Stars.mp3";
-import the_threads from "$lib/assets/The Threads.mp3";
-import tungsten_rain from "$lib/assets/Tungsten Rain.mp3";
 
 class Particle {
   x!: number;
