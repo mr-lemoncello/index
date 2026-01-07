@@ -119,7 +119,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
 
   // returns 0 → night, 1 → noon
   function getDayFactor(time: number) {
-    const result = ((1 - Math.cos((time * 2 * Math.PI) / 500)) / 2);
+    const result = ((1 - Math.cos((2 * Math.PI * time) / 500)) / 2);
     return result;
   }
 
