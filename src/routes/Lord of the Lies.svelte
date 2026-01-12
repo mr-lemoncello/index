@@ -1,4 +1,4 @@
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     We often turn to fiction to reflect the truth: to better understand
     ourselves, our nature, and our societies. But what happens when a novel
     disguises personal pessimism as universal insight? Lord of the Flies is
@@ -8,7 +8,7 @@
     that Golding projects his own flaws onto the boys on the island, it is
     surprising it is thought of as a must-read because it ought not to be.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     One major criticism of the novel is the improbability of a group of children
     raised in a society so quickly descending into violence and chaos without an
     imminent, life-threatening danger; such an unraveling oversimplifies the
@@ -51,7 +51,7 @@
     not chaos, is the more likely outcome of adversity, and other examples suggest
     chaos forms more often within society than not.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     While reality has since indicated the novel is unrealistic, what is more
     interesting is why it takes this stance. The most compelling idea is that
     Golding projects his own flaws onto the boys on the island. Some key moments
@@ -83,7 +83,7 @@
     is not a stretch to conclude he is personifying his own warped views of society
     through the tribe.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     The reason for the novel’s perspectives are now clear, but what is more is
     that it is thought of as a must-read, and it ought not to be. It is
     critically acclaimed, one reason why it has stayed relevant for so many
@@ -111,7 +111,7 @@
     is not a good read, just that it is not important enough of a read to warrant
     such universal attention.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     While Lord of the Flies has edged its way into the literary canon thus far,
     it deserves more a critical eye than continued reverence. Its portrayal of
     human nature is not just wrong but completely opposite reality. Golding’s
@@ -123,13 +123,13 @@
     make such broad statements about what it means to be human.
 </p>
 <hr />
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >1. Bregman, Rutger. Humankind: A Hopeful History. Bloomsbury
         Publishing, 2019.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >2. Darley, John M., et al. “FROM JERUSALEM TO JERICHO: A STUDY OF
         SITUATIONAL AND DISPOSITIONAL VARIABLES IN HELPING BEHAVIOR.” Journal of
@@ -137,14 +137,14 @@
         sparq.stanford.edu/sites/g/files/sbiybj19021/files/media/file/darley_batson_1973_-_from_jerusalem_to_jericho.pdf.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >3. Warneken, Felix, et al. “Young Children Share the Spoils After
         Collaboration.” Psychological Science, vol. 22, no. 2, Dec. 2010, pp.
         267–73. https://doi.org/10.1177/0956797610395392.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >4. Ulber, Julia, et al. “How 18- and 24-month-old peers divide
         resources among themselves.” Journal of Experimental Child Psychology,
@@ -152,34 +152,34 @@
         https://doi.org/10.1016/j.jecp.2015.07.009.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >5. Encina, Gregorio Billikopf. “Milgram’s Experiment on Obedience to
         Authority.” nature.berkeley.edu/ucce50/ag-labor/7article/article35.htm.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >6. Leithead, Alastair. “Stanford Prison Experiment Continues to Shock.”
         BBC News, 17 Aug. 2011, www.bbc.com/news/world-us-canada-14564182.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >7. Hersh, Seymour M. “Torture at Abu Ghraib.” The New Yorker, 30 Apr.
         2004, www.newyorker.com/magazine/2004/05/10/torture-at-abu-ghraib.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>8. Golding, William. Men And Women Now. John Carey, 2009.</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >9. Carey, John. William Golding: The Man Who Wrote “Lord of the Flies.”
         Faber and Faber, 2009.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >10. Hitler, Adolf. There Are Only Two Possibilities: Victory of the
         Aryan or Victory of the Jew.
@@ -187,38 +187,38 @@
         München, Bavaria, Germany.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >11. Modern Library Top 100 - Penguin Random House.
         sites.prh.com/modern-library-top-100/#about.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >12. “[MLR] Modern Library 100 Best Novels (the Reader’s List).” Letters
         Republic, 7 Aug. 2012, lettersrepublic.wordpress.com/mlr.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >13. BBC - The Big Read - Top 100 Books.
         www.bbc.co.uk/arts/bigread/top100.shtml.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >14. Time Magazine’s All-Time 100 Novels (100 Books).
         www.goodreads.com/list/show/2681.Time_Magazine_s_All_Time_100_Novels.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >15. Brunak, Gene, and Karen Margolis. Lord of the Flies. Edited by
         Kelly J. Gomes,
         www.pps.net/cms/lib/OR01913224/Centricity/Domain/179/Final_Lord_of_the_Flies_Sept_2010.pdf.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >16. Pinker, Steven. “The Surprising Decline in Violence.” TED Talks,
         www.ted.com/talks/steven_pinker_the_surprising_decline_in_violence?language=en.</sup

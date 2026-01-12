@@ -1,4 +1,4 @@
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     George Orwell (born Eric Arthur Blair June 25th, 1903) was an English writer
     whose works include novels, poems, essays, journalism, prose, and social
     criticism. He is best known for the allegorical fable-novella Animal Farm
@@ -12,7 +12,7 @@
     manipulation of truth and disintegration of freedom with a clear warning that
     continues to remain relevant.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     Both pieces are critical of authoritarian regimes and written in response to
     events recent at the time. Animal Farm is critical of communism and written
     in response to the rise of the Soviet Union; Nineteen Eighty-Four is
@@ -40,7 +40,7 @@
     how the Revolution became indistinguishable from the oppressive systems it sought
     to overthrow.<sup>8</sup>
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     Nineteen Eighty-Four, published four years later in 1949, takes Orwell’s
     critique of authoritarianism to a darker extreme. Nineteen Eighty-Four is
     more about the dangers of totalitarianism on a broader scale, which Orwell
@@ -74,7 +74,7 @@
     The focus on language and its ability to control what people think says a great
     deal about Orwell’s belief in its power.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     What makes Orwell’s work so enduring is not just the historical context in
     which it was written, but its universality in its themes. Both books speak
     of the dangers of unchecked power, the manipulation of truth, and the
@@ -233,7 +233,7 @@
     Only through vigilant defense of our rights can we prevent history from repeating
     itself.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     The legacy of George Orwell is one of political insight and moral clarity.
     Through his depiction of communist regimes in Animal Farm and totalitarian
     ones in Nineteen Eighty-Four, Orwell not just explored the nature of power
@@ -245,64 +245,64 @@
     and freedom. Make Orwell fiction again!
 </p>
 <hr />
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >1. Blair, Eric Arthur (George Orwell). Animal Farm. 1945. 75th An.,
         Penguin Random House, 2020.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>2. ---. Nineteen Eighty-Four. Secker and Warburg, 1949.</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >3. Times. “The 50 Greatest British Writers Since 1945.” The Times, 3
         Apr. 2010,
         www.thetimes.com/article/the-50-greatest-british-writers-since-1945-ws3g69xrf90.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >4. BBC - The Big Read - Top 100 Books.
         www.bbc.co.uk/arts/bigread/top100.shtml.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >5. PBS: Think Tank: Transcript for “Orwell’S Century.”
         www.pbs.org/thinktank/transcript990.html.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>6. Orwell 28 (Animal Farm)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>7. Orwell 17 (Animal Farm)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>8. Orwell 68 (Animal Farm)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>9. Orwell Part One, Chapter 1 (6) (Nineteen Eighty-Four)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>10. Orwell Part Two, Chapter 9 (7) (Nineteen Eighty-Four)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >11. Freedom House. “The Global Expansion of Authoritarian Rule.”
         Freedom House,
         freedomhouse.org/report/freedom-world/2022/global-expansion-authoritarian-rule.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >12. “Trump Sues CBS News Over 60 Minutes Interview With Harris; Network
         Says Suit Is ‘Completely Without Merit.’” CBS News, 1 Nov. 2024,
         www.cbsnews.com/news/trump-sues-cbs-news-60-minutes-interview.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >13. Grynbaum, Michael M., and Jim Rutenberg. “Trump Sues ABC and
         Stephanopoulos, Saying They Defamed Him.” The New York Times, 18 Mar.
@@ -310,70 +310,70 @@
         www.nytimes.com/2024/03/18/us/politics/trump-lawsuit-abc-stephanopoulos.html.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >14. Kellman, Laurie. “What to Know About How the White House Press
         Corps Works | AP News.” AP News, 12 Feb. 2025,
         apnews.com/article/trump-gulf-mexico-america-ap-first-amendment-4304433d73ad496f5308c9666cbe8e11.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >15. Majid, Aisha. “Top 25 US Newspaper Circulations: Largest Print
         Titles Fall 14% in Year to March 2023.” Press Gazette, 30 June 2023,
         pressgazette.co.uk/media-audience-and-business-data/media_metrics/top-25-us-newspaper-circulations-down-march-2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >16. Rosenblatt, Lauren. “Once Dubbed a Woke Billionaire, Jeff Bezos
         Changes His Tune on Trump.” The Seattle Times, 17 Jan. 2025,
         www.seattletimes.com/business/amazon/once-dubbed-a-woke-billionaire-jeff-bezos-changes-his-tune-on-trump.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >17. “Amazon Boss Jeff Bezos Buys Washington Post for $250m.” BBC News,
         6 Aug. 2013, www.bbc.com/news/av/business-23582797.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >18. Folkenflik, David. “Bezos’ Changes at ‘Washington Post’ Lead to
         Mass Subscription Cancellations — Again.” NPR, 28 Feb. 2025,
         www.npr.org/2025/02/28/nx-s1-5312819/washington-post-bezos-subscriptions-cancellations.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >19. Mullin, Benjamin. “The Washington Post’s New Mission: Reach ‘All of
         America.’” The New York Times, 16 Jan. 2025,
         www.nytimes.com/2025/01/16/business/media/the-washington-post-new-mission.html.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >20. Cillizza, Chris. “Here’s Donald Trump’s Most Lasting, Damaging
         Legacy.” CNN, 30 Aug. 2021,
         www.cnn.com/2021/08/30/politics/trump-legacy-fake-news/index.html.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >21. Rutgers University. “How Trump Shaped the Media.” Rutgers
         University, 20 Jan. 2021, www.rutgers.edu/news/how-trump-shaped-media.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>22. Orwell 30 (Animal Farm)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>23. Orwell 65 (Animal Farm)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup>24. Orwell 29 (Animal Farm)</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >25. Kessler, Glenn. “Trump Made 30,573 False or Misleading Claims as
         President: Nearly Half Came in His Final Year.” The Washington Post, 23
@@ -381,35 +381,35 @@
         www.washingtonpost.com/politics/how-fact-checker-tracked-trump-claims/2021/01/23/ad04b69a-5c1d-11eb-a976-bad6431e03e2_story.html.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >26. Offenhartz, Jake. “ICE Arrests Palestinian Activist Mahmoud Khalil
         | AP News.” AP News, 10 Mar. 2025,
         apnews.com/article/columbia-university-mahmoud-khalil-ice-15014bcbb921f21a9f704d5acdcae7a8.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >27. Iqbal, Nomia. Pro-Palestinian Student Protester Detained by US
         Immigration Officials, Says Lawyer. 10 Mar. 2025,
         www.bbc.com/news/articles/c0q1pl1eldno.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >28. Chappell, Bill. “Mahmoud Khalil Case Goes to Court, Spotlighting
         Green Card Holders’ Rights.” NPR, 12 Mar. 2025,
         www.npr.org/2025/03/11/nx-s1-5323147/mahmoud-khalil-green-card-rights.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >29. Shalvey, Kevin, et al. “Trump Admin Updates: White House Asks Court
         to Stay Deportation Flights TRO.” ABC News, 17 Mar. 2025,
         abcnews.go.com/Politics/live-updates/trump-2nd-term-live-updates-trump-defends-tariff?id=119625202&entryId=119642816.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >30. Ferré-Sadurní, Luis, and Hamed Aleaziz. “How a Columbia Student
         Fled to Canada After ICE Came Looking for Her.” The New York Times, 15
@@ -417,27 +417,27 @@
         www.nytimes.com/2025/03/15/nyregion/columbia-student-kristi-noem-video.html.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >31. Mackey, Robert. “French Scientist Denied US Entry After Phone
         Messages Critical of Trump Found.” The Guardian, 27 Mar. 2025,
         www.theguardian.com/us-news/2025/mar/19/trump-musk-french-scientist-detained.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >32. “Tracking the Trump Administration’s Harmful Executive Actions |
         Congressman Steve Cohen.” Congressman Steve Cohen, 28 Mar. 2025,
         cohen.house.gov/TrumpAdminTracker.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >33. "Executive Orders.” Federal Register,
         www.federalregister.gov/presidential-documents/executive-orders/donald-trump/2025</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >34. Kronenberg, Alan. “The Biggest Political Donors of the 2024
         Election.” US News & World Report, 5 Nov. 2024,

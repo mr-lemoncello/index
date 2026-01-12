@@ -1,4 +1,4 @@
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     The maxim: <em
         >“all children deserve parents, but not all parents deserve children”</em
     >
@@ -18,7 +18,7 @@
     the cycle of emotional harm to persist, not because abuse is invisible, but because
     society refuses to call it what it is.<sup>1</sup>
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     Emotional abuse in parent-child relationships remains grotesquely
     normalized. Behaviors that would be condemned between adults are dismissed
     when inflicted on children, as though youth transforms cruelty into
@@ -40,7 +40,7 @@
     as such is a testament to society’s collective willingness to prioritize parental
     comfort over children’s psychological safety.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     Children living under emotionally abusive parents are often trapped in an
     environment where psychological survival becomes their primary developmental
     task. Childhood for them is not a stage of exploration: it is a stage of
@@ -60,7 +60,7 @@
     These outcomes are not developmental quirks; they are psychological injuries
     inflicted at an age when children lack any means of self-defense.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     The long-term psychological consequences of emotional abuse constitute a
     form of delayed devastation, lingering like ghosts. Adults raised in
     emotionally abusive homes often spend years, if not decades attempting to
@@ -79,7 +79,7 @@
     willingness to act with basic emotional responsibility, choosing power over
     compassion, control over connection.<sup>8</sup>
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     A central driver of emotionally abusive parenting is emotional immaturity:
     an adult’s inability to regulate their own emotions, empathize with others,
     or differentiate their personal frustrations from their child’s needs.<sup
@@ -99,7 +99,7 @@
     mistreatment is invalid), ‘family matters are private’ (translation: stay silent
     even when you are being abused).
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     One of society’s most insidious failures is the way it dehumanizes children.
     Children are frequently treated as decorative proof of adulthood, emotional
     trash bins, blank slates on which parents project insecurities, or
@@ -111,7 +111,7 @@
     word, every gesture, every silence. Children remember, maybe not every
     detail, but the emotional reality? They remember all of it.<sup>11</sup>
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     These narratives collectively ensure that abusive parents remain socially
     insulated while children are forced into complicity. They transform abuse
     from an individual failing into systemic negligence. In this framework,
@@ -128,7 +128,7 @@
     human being are often the ones most capable of providing care.<sup>16</sup> In
     this way, the unprepared are systematically elevated and the responsible side-eyed.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     To illustrate what emotionally competent parenting looks like, secure
     attachment theory provides a clear framework. Secure attachment is defined
     as a deep, emotional bond where the child feels safe, understood, and
@@ -145,7 +145,7 @@
     from a secure base, which is done in three ways: responsiveness, consistency
     in structure, and autonomy-supporting.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     Responsive parenting means engaging with children in a consistent,
     sensitive, and emotionally warm way. This involves being present and
     empathetic to the child’s feelings and experiences, and responding in a
@@ -165,7 +165,7 @@
     and social development.<sup>22</sup> Warm communication helps build trust and
     openness. These parents do not seek to dominate. They seek to connect.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     Consistency in structure focuses on establishing clear rules, expectations,
     and routines, and following through with predictable and fair consequences,
     which helps children learn to regulate their behavior and develop emotional
@@ -179,7 +179,7 @@
     Inconsistent discipline is associated with behavioral problems.<sup>25</sup>
     These parents do not weaponize their authority. They use it to cultivate safety.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     Autonomy supportive parenting is a style that balances providing support
     with allowing children to develop independence, self-worth, and their own
     decision-making skills within clear boundaries. It values the child’s
@@ -191,7 +191,7 @@
     emotional well-being.<sup>29</sup> These parents do not insist on obedience.
     They encourage autonomy grounded in trust.
 </p>
-<p class="text-white font-mono text-sm indent-8 mb-0">
+<p class="with-margin-text indent-8 mb-0">
     Emotional abuse in parent-child relationships is not an inevitable byproduct
     of imperfect humanity: it is the outcome of a culture that grants adults
     unconditional authority and children conditional worth. Parenthood requires
@@ -208,26 +208,26 @@
     to acknowledge this truth is complicit in the harm that follows.
 </p>
 <hr />
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >1. American Academy of Pediatrics. “Psychological Maltreatment.”
         Pediatrics, vol. 130, no. 2, 2012, pp. 372–378,
         publications.aap.org/pediatrics/article/130/2/372/29936.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >2. Verywell Family. “What Is Emotional Child Abuse?” Verywell Family,
         www.verywellfamily.com/what-is-emotional-child-abuse-4157502.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >3. Verywell Health. “Can You Get PTSD from Emotional Abuse?” Verywell
         Health, www.verywellhealth.com/ptsd-from-emotional-abuse-5210626.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >4. Wright, Margaret O'Dougherty et al. “Childhood emotional
         maltreatment and later psychological distress among college students:
@@ -235,14 +235,14 @@
         33,1 (2009): 59-68. doi:10.1016/j.chiabu.2008.12.007</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >5. Șițoiu, A., & Pânișoară, G. (2022). Emotional Regulation in Parental
         Optimism—The Influence of Parenting Style. Sustainability, 14(8), 4509.
         https://doi.org/10.3390/su14084509</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >6. Tarabulsy, George M., et al. “Footprints from Childhood: Intra-
         versus Extra-Familial Childhood Maltreatment and Its Association to
@@ -250,14 +250,14 @@
         bmcpsychology.biomedcentral.com/articles/10.1186/s40359-025-03001-7.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >7. De Boer, Arianne, et al. “Long-Term Emotional Consequences of
         Parental Alienation Exposure in Children: A Systematic Review.” =, 2021,
         link.springer.com/article/10.1007/s12144-021-02537-2.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >8. WenLi, Zhang et al. “Parenting styles and externalizing problem
         behaviors of preschoolers: mediation through self-control abilities and
@@ -265,7 +265,7 @@
         Feb. 2025, doi:10.3389/fpsyg.2025.1433262</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >9. Kim, Geun Young, et al. “Relationship between Mother’s Emotional
         Intelligence, Negative Parenting Behaviour, and Children’s Attachment
@@ -273,7 +273,7 @@
         bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-022-13171-3.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >10. Cao, Yiwen, and Kathryn Maguire-Jack. “Interactions with Community
         and Institutions: Preventive Pathways for Child Maltreatment.” Child
@@ -281,21 +281,21 @@
         pmc.ncbi.nlm.nih.gov/articles/PMC5472093.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >11. Nanda, Sarannya. “The Impact of Parenting Styles on Emotion
         Regulation in Children.” International Journal for Multidisciplinary
         Research (IJFMR), 2025, www.ijfmr.com/papers/2025/3/49802.pdf.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >12. Frontini, A., et al. “What Do We Need Kids For? Childbearing
         Motivations, Personal Values, and Socio-demographic Differences.”
         Frontiers in Psychology, 2025, doi:10.3389/fpsyg.2025.1612384.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >13. BMC Women’s Health. “Reflections on Timing of Motherhood – a
         Qualitative Online Study with Women of Reproductive Age.” BMC Women’s
@@ -303,53 +303,53 @@
         bmcwomenshealth.biomedcentral.com/articles/10.1186/s12905-024-03409-0.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >14. Foti, Federica, et al. “The Importance of Motherhood: Cultural
         Norms, Stigma, and Reproduction in Pronatalist Societies.” Frontiers in
         Public Health, vol. 11, 2023, doi:10.3389/fpubh.2023.1024438.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >15. McKendree University Scholars. “Voluntary Childlessness: Stigma and
         Societal Pressures on Men and Women.” McKendree University, 2019,
         www.mckendree.edu/academics/scholars/reining-issue-29.pdf.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >16. Özgür, Gülşah, and Emine Yesil. “Womanhood Bound to Motherhood:
         Choosing Childlessness in Türkiye.” BMC Psychology, vol. 13, 2025,
         bmcpsychology.biomedcentral.com/articles/10.1186/s40359-025-02661-9.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >17. Bowlby, John. Attachment and Loss, Vol. 1: Attachment. Basic Books,
         1969.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >18. Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. N.
         Patterns of Attachment: A Psychological Study of the Strange Situation.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >19. Martínez, Paulina, and Andrea Muñoz. “Empathy and Parental
         Sensitivity in Child Attachment: A Systematic Review.” Children, vol.
         12, no. 4, 2025, www.mdpi.com/2227-9067/12/4/465</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >20. Gottman, J. M., & DeClaire, J. (1997). Raising an Emotionally
         Intelligent Child: The Heart of Parenting. New York: Simon & Schuster.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >21. Ferreira, Carolina, et al. “Emotional Competence, Attachment, and
         Parenting Styles in Children and Parents.” Psicologia: Reflexão e
@@ -357,7 +357,7 @@
         prc.springeropen.com/articles/10.1186/s41155-022-00208-0.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >22. Ren, Xiaoran, et al. “Parenting Pathways to Friendship: How
         Self-Control and Emotion Management Skills Mediate Preschoolers’ Social
@@ -365,7 +365,7 @@
         bmcpsychology.biomedcentral.com/articles/10.1186/s40359-025-02641-z.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >23. Wang, Ruiping. “The Effects of Parent-Child Attachment Style and
         Parenting Style on Children’s Emotional Competence.” Journal of
@@ -373,13 +373,13 @@
         drpress.org/ojs/index.php/EHSS/article/view/17828.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >24. Baumrind, D. (1967). Child care practices anteceding three patterns
         of preschool behavior. Genetic Psychology Monographs, 75(1), 43–88.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >25. Ganesan, Prachi. “The Impact of Parenting Styles on a Child’s
         Emotional Quotient (EQ).” International Journal of Indian Psychology,
@@ -387,7 +387,7 @@
         18 Nov. 2025.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >26. Khan, Jamil, et al. “Impact of Parental Styles on Emotional
         Intelligence, Academic Achievement, and Self-Esteem of University
@@ -396,7 +396,7 @@
         jprpk.com/index.php/jpr/article/download/629/867/1747.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >27. Masood, Faiza, and Muhammad Farhan Raza. “Psychological
         Maltreatment and Its Relationship with Self-Esteem and Psychological
@@ -405,14 +405,14 @@
         bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-019-2139-y.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >28. Ryan, Richard M., and Edward L. Deci. "Self-Determination Theory
         and the Facilitation of Intrinsic Motivation, Social Development, and
         Well-Being." American Psychologist, vol. 55, no. 1, 2000, pp. 68–78.
     </sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >29. Alexander, Ammu E., and Padmakumari Indu. “Impact of Parental
         Over-Protection on Emotional Intelligence in Young Adults.” Indian
@@ -420,7 +420,7 @@
         www.napsindia.org/wp-content/uploads/2023/06/9-Impact-Of-Parental-Over-Protection-On-Emotional-Intelligence-In-Young-Ammu-E-Alexander-Dr.Padmakumari-Indu-D-Padavan.pdf.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >30. Morris, Amanda S., et al. “Impact of Parenting on Emotion
         Regulation During Childhood and Adolescence.” Child Development

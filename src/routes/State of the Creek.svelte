@@ -20,8 +20,8 @@
     import ept_graph from "$lib/assets/ept_graph.webp";
 </script>
 
-<p class="text-white font-mono text-sm">
-    Published in <a class="text-aroace-light-blue" href="https://hylawoods.com/"
+<p class="with-margin-text">
+    Published in <a class="with-margin-text-aroace-light-blue" href="https://hylawoods.com/" target="_blank"
         >Hyla Woods</a
     > Annual State of the Creek Report Essay Competition (First Place)
 </p>
@@ -29,7 +29,7 @@
     <img src={site_l} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 1.</em> Alexy Heston, Photo of Site L: 12 Oct 2023.<sup>1</sup>
 </p>
 
@@ -37,14 +37,14 @@
     <img src={site_l2} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 2.</em> Alexy Heston, Photo of Site L: 12 Oct 2023.
 </p>
 
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <strong>Introduction</strong>
 </p>
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     “The best way to understand the universe is through a forest wilderness,”
     once said renowned naturalist John Muir. Forests are more than mere
     resources to be sold, destroyed, and profited from. Beautiful living
@@ -66,10 +66,10 @@
     leading to the untimely demise of the forests. This quote, in my opinion,
     encapsulates our journey to Hyla Woods.
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <strong>Narrative</strong>
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     On October 12th and 30th, our class had the privilege of visiting Hyla
     Woods, an 160-acre actively logged forest located west of Portland, near
     Forest Grove. This remarkable forest, owned by the Hayes family, serves as a
@@ -78,7 +78,7 @@
         >2</sup
     >
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     Hyla Woods distinguishes itself from conventional logging operations through
     a fundamental difference in approach. In the realm of timber production,
     clear-cutting has emerged as the prevailing and profit-driven method,
@@ -92,7 +92,7 @@
     prioritizing the integrity and health of their land and its surrounding
     environment.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     During our visit, we had the opportunity to collect valuable data from the
     stream, focusing on various variables such as pH levels, dissolved oxygen
     (DO), water and air temperature, turbidity, and benthic macroinvertebrates.
@@ -103,20 +103,20 @@
     Coho salmon. These salmon are a threatened species that spawn only in small
     mountain streams, ones similar to Lousignont Creek in Hyla Woods.
 </p>
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     Our work at Hyla Woods was driven by four foundational questions: What
     defines a system and how does it function? How do organisms influence one
     another and their surrounding environment? How does energy and matter
     circulate within an ecosystem? And, most importantly, how can we determine
     the health of an ecosystem?
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     The recent investigation fostered significant learning outcomes related to
     scientific practices and cross-cutting concepts. As evidenced by the
     alignment with numerous Next Generation Science Standards (NGSS), the work
     meaningfully advanced our understanding of science.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     Specifically, the activities connected to NGSS Practice 1 by seeking answers
     to core questions, especially “How can we determine the health of an
     ecosystem?” Substantial planning and two days of fieldwork at Hyla Woods
@@ -127,14 +127,14 @@
     of test outcomes with the landowners for stewardship purposes embodied
     Practice 8.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     Several cross-cutting concepts were also engaged. Repeated water testing to
     identify patterns coincided with Concept 1. The various data collected
     exemplified Concept 3. Investigation of the Hyla Woods system demonstrated
     Concept 4. Aspiring to understand ecosystem stability over time related to
     Concept 7.
 </p>
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     Beyond just the immense ramifications of in-class learning, this work is not
     limited to our science classroom in the slightest. Our research contributes
     to helping the Hayes family continually manage the forest sustainably, and
@@ -154,7 +154,7 @@
     measures to safeguard these important fish and the long-term viability of
     the species.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     Wild Salmon Strongholds are a vital component for the health of salmon. As
     discussed in class, these areas allow salmon populations to exist unaffected
     by human impacts and activities, thereby ensuring the long-term viability
@@ -167,7 +167,7 @@
     regulate water flows and quality, while the streams transport nutrients into
     the woods. A disruption to either can gravely harm the other.<sup>3</sup>
 </p>
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     For Hyla Woods, the connections between overland and instream environments
     are evident. With its woodlands directly adjacent to salmon-bearing
     waterways, the area provides salmon with optimal spawning grounds, shelter
@@ -176,11 +176,11 @@
     from the trees fall into the creeks, creating habitat complexity.<sup>4</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <strong>Tests and Results</strong>
 </p>
 
-<p class="text-white font-mono text-sm indent-8 pt-0">
+<p class="with-margin-text indent-8 pt-0">
     Water temperature is a measurement of the kinetic energy, or movement of
     molecules, within a body of water. Determining water temperature accurately
     is an important factor when assessing the health of aquatic ecosystems. For
@@ -204,11 +204,11 @@
     <img src={turbidity} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 3.</em> Alexy Heston, Conducting Turbidity Test: 12 Oct 2023.
 </p>
 
-<p class="text-white font-mono text-sm indent-8 pt-0">
+<p class="with-margin-text indent-8 pt-0">
     Turbidity is a measure of water cloudiness and an indicator of how much
     light can pass through the water. We assessed turbidity levels by collecting
     creek water samples in a specialized tube containing a checkerboard pattern
@@ -233,11 +233,11 @@
     <img src={dissolved_oxygen} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 4.</em> Freya Ellis, Conducting DO Test: 30 Oct 2023.
 </p>
 
-<p class="text-white font-mono text-sm indent-8 pt-0">
+<p class="with-margin-text indent-8 pt-0">
     Dissolved Oxygen (DO) refers to the diatomic oxygen (O<sub>2</sub>)
     molecules that are dissolved in an aqueous solution (H2O). We tested the
     concentration of dissolved oxygen by again taking a water sample from the
@@ -266,11 +266,11 @@
     <img src={pH} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 5.</em> Alexy Heston, Conducting pH Test: 12 Oct 2023.
 </p>
 
-<p class="text-white font-mono text-sm indent-8 pt-0">
+<p class="with-margin-text indent-8 pt-0">
     pH is the measure of the concentration of hydroxyl ions (OH-) compared to
     hydrogen ions (H+) in an aqueous solution. A solution in which there is a
     higher concentration of hydrogen ions than hydroxyl ions is considered
@@ -296,7 +296,7 @@
     <img src={macro1} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 6.</em> Freya Ellis, Collecting Macroinvertebrates: 30 Oct 2023.
 </p>
 
@@ -304,7 +304,7 @@
     <img src={macro2} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 7.</em> Freya Ellis, Sorting Macroinvertebrates: 30 Oct 2023.
 </p>
 
@@ -312,7 +312,7 @@
     <img src={macro3} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 8.</em> Freya Ellis, Identifying Macroinvertebrates: 30 Oct 2023.
 </p>
 
@@ -320,7 +320,7 @@
     <img src={macro4} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 9.</em> Freya Ellis, Continually Identifying Macroinvertebrates: 30
     Oct 2023.
 </p>
@@ -329,7 +329,7 @@
     <img src={macro5} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 10.</em> Freya Ellis, Sorting Macroinvertebrates: 30 Oct 2023.
 </p>
 
@@ -337,7 +337,7 @@
     <img src={macro6} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 11.</em> Freya Ellis, Identifying Macroinvertebrates: 30 Oct 2023.
 </p>
 
@@ -345,7 +345,7 @@
     <img src={macro7} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 12.</em> Freya Ellis, Macroinvertebrates: 30 Oct 2023.
 </p>
 
@@ -353,11 +353,11 @@
     <img src={macro8} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 13.</em> Freya Ellis, Sorted Macroinvertebrates: 30 Oct 2023.
 </p>
 
-<p class="text-white font-mono text-sm indent-8 pt-0">
+<p class="with-margin-text indent-8 pt-0">
     We tested the amount of benthic macroinvertebrates present in the creek
     water. On our initial visit, we placed a leaf pack in the water to allow
     colonization by macroinvertebrates. On the second visit, we removed the leaf
@@ -367,7 +367,7 @@
     number of individuals in each group. This process allowed us to quantify the
     macroinvertebrate populations present by species.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     We then calculated both the Biotic Index and EPT Score for the site to
     evaluate water quality and ecosystem health. The Biotic Index is a measure
     of the average tolerance value of the macroinvertebrates present. We
@@ -378,7 +378,7 @@
     quality and less organic pollution due to a community composition of more
     sensitive species.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0 pt-0">
+<p class="with-margin-text indent-8 m-0 pt-0">
     The EPT Score provides a measure of the relative abundance of certain
     pollution-sensitive macroinvertebrate orders - Ephemeroptera (Mayflies),
     Plecoptera (Stoneflies), and Trichoptera (Caddisflies). These three orders
@@ -388,7 +388,7 @@
     then multiplied by 100 to express it as a percentage. Higher EPT Scores
     (greater than 50%) are taken to indicate higher water quality.
 </p>
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     We tested macroinvertebrate populations because their composition and
     relative abundances provide insight into the overall health of the aquatic
     ecosystem. The sensitivity and feeding groups represented can offer clues
@@ -399,10 +399,10 @@
     diversity of species sampled can also inform whether the site can sustain
     local amphibian, fish, bird and other populations.<sup>7,8</sup>
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <strong>Analysis and Conclusions</strong>
 </p>
-<p class="text-white font-mono text-sm indent-8 pt-0">
+<p class="with-margin-text indent-8 pt-0">
     The average water temperature we observed was 10.9 degrees Celsius. The
     adequate range for salmon health is between 5 to 25 degrees Celsius, with
     lower temperatures (5 to 13 degrees Celsius) generally being more
@@ -427,11 +427,11 @@
     <img src={temp_graph} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 14.</em> Temperature Graph
 </p>
 
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     The average turbidity level we observed at our testing site was 5
     Nephelometric Turbidity Units (NTU). The adequate turbidity range for salmon
     health and survival, as established by fisheries biologists and water
@@ -462,11 +462,11 @@
     <img src={turbid_graph} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 15.</em> Turbidity Graph
 </p>
 
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     The dissolved oxygen (DO) level observed at Hyla Woods was 9 parts per
     million (ppm). The adequate range for salmon health according to scientific
     research is between 8-12 ppm, with higher DO concentrations being
@@ -495,11 +495,11 @@
     <img src={do_graph} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 16.</em> Dissolved Oxygen Graph
 </p>
 
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     Based on our observations, we found that the average pH level recorded was
     6.4. It is important to note that when it comes to the health of salmon, a
     pH range of 6.0 to 8.0 is considered adequate. However, a pH level around
@@ -545,11 +545,11 @@
     <img src={ph_graph} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 17.</em> pH Graph
 </p>
 
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     Based on our observations, the average Biotic Index that we recorded was
     determined to be 3.76. It is important to note that for optimal salmon
     health, the recommended range for the Biotic Index is below 5. In
@@ -588,11 +588,11 @@
     <img src={biotic_graph} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 18.</em> Biotic Index Graph
 </p>
 
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     Based on our observations, the average EPT Score that we have encountered is
     60. 1. It is important to note that when it comes to assessing the health of
     salmon, an adequate range for their well-being is considered to be greater
@@ -633,11 +633,11 @@
     <img src={ept_graph} alt="" />
 </div>
 
-<p class="text-white text-center font-mono text-base">
+<p class="text-white text-center font-[VerilySerif] text-base">
     <em>Fig. 19.</em> EPT Score Graph
 </p>
 
-<p class="text-white font-mono text-sm indent-8">
+<p class="with-margin-text indent-8">
     The consistent positive scores across various measures indicate that the
     steam's health is not only currently in a good state but also has the
     potential to sustain its well-being in the long term. The absence of any
@@ -656,7 +656,7 @@
     Hyla Woods and Lousignont Creek are healthy and thriving, and will hopefully
     become great homes for the next generation of salmon.
 </p>
-<p class="text-white font-mono text-sm indent-8 m-0">
+<p class="with-margin-text indent-8 m-0">
     In conclusion, Hyla Woods serves as a poignant reminder of the intricate web
     of life and our responsibility to protect and preserve it. The mesmerizing
     ecosystem found within its lush green canopy calls upon us to reevaluate our
@@ -672,34 +672,34 @@
     of our planet Earth.
 </p>
 <br />
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >1. “Site L Photos.” Google Drive, 16 Oct. 2023,
         drive.google.com/drive/folders/1zE_UNWP4ct23SsqIa5OINjf5FSZn2av9.
         Accessed 9 Nov. 2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >2. Hayes, Peter, and Pam Hayes. Hyla Woods. hylawoods.com. Accessed 9
         Nov. 2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >3. Salmon Strongholds.” Google Docs, 17 Oct. 2023,
         docs.google.com/document/d/1_B4eDWzsgJ7Q_FcrAaDbOQcOmyyYHQouKnV58t0kC38/edit.
         Accessed 9 Nov. 2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >4. “Hyla Woods Reference Table.” Google Docs, 7 Nov. 2023,
         docs.google.com/document/d/1z-R5swp6ADlDye46el8cSfiOp122jWnADTV6NcdY210/edit.
         Accessed 9 Nov. 2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >5. Banerjee Murthy, Vikas. “Water Quality Framed Notes.” Google Docs,
         26 Sept. 2023,
@@ -707,28 +707,28 @@
         Accessed 9 Nov. 2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >6. “Water Quality Reading.” Google Drive,
         drive.google.com/file/d/15LKml1gAIuT8vEAUxWsGyK4rM5sz_fXb/view?usp=drivesdk.
         Accessed 9 Nov. 2023.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >7. Banerjee Murthy, Vikas. “River Webs Notes 1.” Google Drive, 22 Nov.
         2023,
         https://drive.google.com/file/d/14mpyq943ba4nJAD4cG6ly8E6YWALhTCv/view?usp=drivesdk.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >8. Banerjee Murthy, Vikas. “River Webs Notes 2.” Google Drive, 22 Nov.
         2023,
         drive.google.com/file/d/1YrLaNy02q95LUjkiymwVmZSSDvqR9SVh/view?usp=drivesdk.</sup
     >
 </p>
-<p class="text-white font-mono text-sm m-0 pt-0">
+<p class="no-margin-text">
     <sup
         >9. Lowes, Jesse. “Hyla Woods Database.” Google Sheets, season-01 2014,
         docs.google.com/spreadsheets/d/1WRpBgLSrGmeJGv2yurNeXafvWXYXkT-Gfw4m341IYp0/edit.
