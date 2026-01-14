@@ -1,7 +1,20 @@
 <script lang="ts">
   import image480 from "$lib/assets/file_480.webp";
+  import resume from "$lib/assets/resume.webp";
   import id_1 from "$lib/assets/id_1.webp";
   import id_2 from "$lib/assets/id_2.webp";
+  import poetry1 from "$lib/assets/poetry1.webp";
+  import poetry1back from "$lib/assets/poetry1back.webp";
+  import poetry2 from "$lib/assets/poetry2.webp";
+  import poetry2back from "$lib/assets/poetry2back.webp";
+  import poetry3 from "$lib/assets/poetry3.webp";
+  import poetry3back from "$lib/assets/poetry3back.webp";
+  import poetry4 from "$lib/assets/poetry4.webp";
+  import poetry4back from "$lib/assets/poetry4back.webp";
+  import poetry5 from "$lib/assets/poetry5.webp";
+  import poetry5back from "$lib/assets/poetry5back.webp";
+  import poetry6 from "$lib/assets/poetry6.webp";
+  import poetry6back from "$lib/assets/poetry6back.webp";
   import type { SvelteComponent } from "svelte";
   import Particles from "$lib/components/Particles.svelte";
   import AudioPlayer from "$lib/components/AudioPlayer.svelte";
@@ -54,43 +67,43 @@
   const books: Book[] = [
     {
       title: "Book 1: Of the Other Shore",
-      front: "src/lib/assets/poetry1.webp",
-      back: "src/lib/assets/poetry1back.webp",
+      front: poetry1,
+      back: poetry1back,
       pages: "11 pages",
       description: "On grief, loss, and hope things will get better",
     },
     {
       title: "Book 2: Through the Fingers",
-      front: "src/lib/assets/poetry2.webp",
-      back: "src/lib/assets/poetry2back.webp",
+      front: poetry2,
+      back: poetry2back,
       pages: "23 pages",
       description: "On moments of shock and hopelessness",
     },
     {
       title: "Book 3: Burnt into Being",
-      front: "src/lib/assets/poetry3.webp",
-      back: "src/lib/assets/poetry3back.webp",
+      front: poetry3,
+      back: poetry3back,
       pages: "17 pages",
       description: "On rage, revolution, and the fire that inspires us",
     },
     {
       title: "Book 4: Seeds in Ash",
-      front: "src/lib/assets/poetry4.webp",
-      back: "src/lib/assets/poetry4back.webp",
+      front: poetry4,
+      back: poetry4back,
       pages: "19 pages",
       description: "On isolation , redeption, and resilience",
     },
     {
       title: "Book 5: Love Letters",
-      front: "src/lib/assets/poetry5.webp",
-      back: "src/lib/assets/poetry5back.webp",
+      front: poetry5,
+      back: poetry5back,
       pages: "35 pages",
       description: "On love, existentialism, and cathartic release",
     },
     {
       title: "Book 6: Bridges in Low Light",
-      front: "src/lib/assets/poetry6.webp",
-      back: "src/lib/assets/poetry6back.webp",
+      front: poetry6,
+      back: poetry6back,
       pages: "15 pages",
       description: "On the highs and lows of urban living",
     },
@@ -270,7 +283,7 @@
       Resume
     </h2>
     <div class="w-250 h-auto">
-      <img src={"/src/lib/assets/resume.webp"} alt="" />
+      <img src={resume} alt="" />
     </div>
     <br />
   </section>
