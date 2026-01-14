@@ -267,7 +267,7 @@
       Resume
     </h2>
     <div class="w-250 h-auto">
-      <img src={"src/lib/assets/resume.webp"} alt="" />
+      <img src={"/src/lib/assets/resume.webp"} alt="" />
     </div>
     <br />
   </section>
@@ -511,8 +511,8 @@
   p-1 m-3
   flex-background"
   >
-    <img src={"src/lib/assets/id_1.webp"} alt="" width="200" />
-    <img src={"src/lib/assets/id_2.webp"} alt="" width="200" />
+    <img src={"/src/lib/assets/id_1.webp"} alt="" width="200" />
+    <img src={"/src/lib/assets/id_2.webp"} alt="" width="200" />
   </div>
 
   <br /> <br /> <br /> <br />
