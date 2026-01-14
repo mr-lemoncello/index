@@ -42,7 +42,6 @@
   const { onSongChange } = $props<{
     onSongChange: (song: string) => void;
   }>();
-
 </script>
 
 <audio
