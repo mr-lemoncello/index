@@ -14,6 +14,7 @@
   import AnimalFarm from "./Animal Farm.svelte";
   import LordoftheLies from "./Lord of the Lies.svelte";
   import KolkatasPollutionCrisis from "./Kolkatas Pollution Crisis.svelte";
+  import image480 from '$lib/assets/file_480.webp';
 
   let song = $state("none");
   let { data } = $props();
@@ -221,7 +222,7 @@
       id="file_480"
       aria-label="Photo of Vikas Banerjee Murthy"
     >
-      <img class="block object-cover" src={"/src/lib/assets/file_480.webp"} alt="" />
+      <img class="block object-cover" src={image480} alt="" />
     </div>
     <div
       class="inline-flex flex-wrap flex-col justify-around
