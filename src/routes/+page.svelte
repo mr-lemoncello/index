@@ -1,20 +1,4 @@
 <script lang="ts">
-  import file_480 from "$lib/assets/file_480.webp";
-  import resume from "$lib/assets/resume.webp";
-  import id_1 from "$lib/assets/id_1.webp";
-  import id_2 from "$lib/assets/id_2.webp";
-  import poetry1 from "$lib/assets/poetry1.webp";
-  import poetry1back from "$lib/assets/poetry1back.webp";
-  import poetry2 from "$lib/assets/poetry2.webp";
-  import poetry2back from "$lib/assets/poetry2back.webp";
-  import poetry3 from "$lib/assets/poetry3.webp";
-  import poetry3back from "$lib/assets/poetry3back.webp";
-  import poetry4 from "$lib/assets/poetry4.webp";
-  import poetry4back from "$lib/assets/poetry4back.webp";
-  import poetry5 from "$lib/assets/poetry5.webp";
-  import poetry5back from "$lib/assets/poetry5back.webp";
-  import poetry6 from "$lib/assets/poetry6.webp";
-  import poetry6back from "$lib/assets/poetry6back.webp";
   import type { SvelteComponent } from "svelte";
   import Particles from "$lib/components/Particles.svelte";
   import AudioPlayer from "$lib/components/AudioPlayer.svelte";
@@ -67,43 +51,43 @@
   const books: Book[] = [
     {
       title: "Book 1: Of the Other Shore",
-      front: poetry1,
-      back: poetry1back,
+      front: "src/lib/assets/poetry1.webp",
+      back: "src/lib/assets/poetry1back.webp",
       pages: "11 pages",
       description: "On grief, loss, and hope things will get better",
     },
     {
       title: "Book 2: Through the Fingers",
-      front: poetry2,
-      back: poetry2back,
+      front: "src/lib/assets/poetry2.webp",
+      back: "src/lib/assets/poetry2back.webp",
       pages: "23 pages",
       description: "On moments of shock and hopelessness",
     },
     {
       title: "Book 3: Burnt into Being",
-      front: poetry3,
-      back: poetry3back,
+      front: "src/lib/assets/poetry3.webp",
+      back: "src/lib/assets/poetry3back.webp",
       pages: "17 pages",
       description: "On rage, revolution, and the fire that inspires us",
     },
     {
       title: "Book 4: Seeds in Ash",
-      front: poetry4,
-      back: poetry4back,
+      front: "src/lib/assets/poetry4.webp",
+      back: "src/lib/assets/poetry4back.webp",
       pages: "19 pages",
       description: "On isolation , redeption, and resilience",
     },
     {
       title: "Book 5: Love Letters",
-      front: poetry5,
-      back: poetry5back,
+      front: "src/lib/assets/poetry5.webp",
+      back: "src/lib/assets/poetry5back.webp",
       pages: "35 pages",
       description: "On love, existentialism, and cathartic release",
     },
     {
       title: "Book 6: Bridges in Low Light",
-      front: poetry6,
-      back: poetry6back,
+      front: "src/lib/assets/poetry6.webp",
+      back: "src/lib/assets/poetry6back.webp",
       pages: "15 pages",
       description: "On the highs and lows of urban living",
     },
@@ -225,7 +209,6 @@
 </FadeInSection>
 
 <FadeInSection>
-  <link rel="image" href={file_480} />
   <div
     class="flex-row gap-1 justify-between content-stretch w-full
   p-1 m-3 flex-background"
@@ -238,7 +221,7 @@
       id="file_480"
       aria-label="Photo of Vikas Banerjee Murthy"
     >
-      <img class="block object-cover" src={file_480} alt="" />
+      <img class="block object-cover" src={"src/lib/assets/file_480.webp"} alt="" />
     </div>
     <div
       class="inline-flex flex-wrap flex-col justify-around
@@ -284,7 +267,7 @@
       Resume
     </h2>
     <div class="w-250 h-auto">
-      <img src={resume} alt="" />
+      <img src={"src/lib/assets/resume.webp"} alt="" />
     </div>
     <br />
   </section>
@@ -528,8 +511,8 @@
   p-1 m-3
   flex-background"
   >
-    <img src={id_1} alt="" width="200" />
-    <img src={id_2} alt="" width="200" />
+    <img src={"src/lib/assets/id_1.webp"} alt="" width="200" />
+    <img src={"src/lib/assets/id_2.webp"} alt="" width="200" />
   </div>
 
   <br /> <br /> <br /> <br />
