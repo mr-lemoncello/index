@@ -221,7 +221,7 @@
       id="file_480"
       aria-label="Photo of Vikas Banerjee Murthy"
     >
-      <img class="block object-cover" src={"/src/lib/assets/file_480.webp"} alt="" />
+      <img class="block object-cover" src={"$app/paths/src/lib/assets/file_480.webp"} alt="" />
     </div>
     <div
       class="inline-flex flex-wrap flex-col justify-around
