@@ -1,4 +1,7 @@
 <script lang="ts">
+  import image480 from "$lib/assets/file_480.webp";
+  import id_1 from "$lib/assets/id_1.webp";
+  import id_2 from "$lib/assets/id_2.webp";
   import type { SvelteComponent } from "svelte";
   import Particles from "$lib/components/Particles.svelte";
   import AudioPlayer from "$lib/components/AudioPlayer.svelte";
@@ -14,7 +17,6 @@
   import AnimalFarm from "./Animal Farm.svelte";
   import LordoftheLies from "./Lord of the Lies.svelte";
   import KolkatasPollutionCrisis from "./Kolkatas Pollution Crisis.svelte";
-  import image480 from '$lib/assets/file_480.webp';
 
   let song = $state("none");
   let { data } = $props();
@@ -512,8 +514,8 @@
   p-1 m-3
   flex-background"
   >
-    <img src={"src/lib/assets/id_1.webp"} alt="" width="200" />
-    <img src={"src/lib/assets/id_2.webp"} alt="" width="200" />
+    <img src={id_1} alt="" width="200" />
+    <img src={id_2} alt="" width="200" />
   </div>
 
   <br /> <br /> <br /> <br />
