@@ -33,7 +33,7 @@
 
   let song = $state("none");
   let { data } = $props();
-  
+
   let activeA: GroupA | null = $state(null);
   let activeB: GroupB | null = $state(null);
   let bg: string = $state("");
@@ -65,18 +65,48 @@
   type GroupB = "editing" | "essays" | "worldbuilding";
 
   const books: Book[] = [
-    { title: "Book 1: Of the Other Shore", front: poetry1, back: poetry1back,
-    pages: "11 pages", description: "On grief, loss, and hope things will get better" },
-    { title: "Book 2: Through the Fingers", front: poetry2, back: poetry2back,
-    pages: "23 pages", description: "On moments of shock and hopelessness" },
-    { title: "Book 3: Burnt into Being", front: poetry3, back: poetry3back,
-    pages: "17 pages", description: "On rage, revolution, and the fire that inspires us" },
-    { title: "Book 4: Seeds in Ash", front: poetry4, back: poetry4back,
-    pages: "19 pages", description: "On isolation , redeption, and resilience" },
-    { title: "Book 5: Love Letters", front: poetry5, back: poetry5back,
-    pages: "35 pages", description: "On love, existentialism, and cathartic release" },
-    { title: "Book 6: Bridges in Low Light", front: poetry6, back: poetry6back,
-    pages: "15 pages", description: "On the highs and lows of urban living" },
+    {
+      title: "Book 1: Of the Other Shore",
+      front: poetry1,
+      back: poetry1back,
+      pages: "11 pages",
+      description: "On grief, loss, and hope things will get better",
+    },
+    {
+      title: "Book 2: Through the Fingers",
+      front: poetry2,
+      back: poetry2back,
+      pages: "23 pages",
+      description: "On moments of shock and hopelessness",
+    },
+    {
+      title: "Book 3: Burnt into Being",
+      front: poetry3,
+      back: poetry3back,
+      pages: "17 pages",
+      description: "On rage, revolution, and the fire that inspires us",
+    },
+    {
+      title: "Book 4: Seeds in Ash",
+      front: poetry4,
+      back: poetry4back,
+      pages: "19 pages",
+      description: "On isolation , redeption, and resilience",
+    },
+    {
+      title: "Book 5: Love Letters",
+      front: poetry5,
+      back: poetry5back,
+      pages: "35 pages",
+      description: "On love, existentialism, and cathartic release",
+    },
+    {
+      title: "Book 6: Bridges in Low Light",
+      front: poetry6,
+      back: poetry6back,
+      pages: "15 pages",
+      description: "On the highs and lows of urban living",
+    },
   ];
 
   const edits: Edit[] = [
@@ -189,7 +219,9 @@
     Vikas Banerjee Murthy
   </span><br />
 
-  <p class="text-gray-400 font-[VerilySerif] text-sm">{data.discordUserState}</p>
+  <p class="text-gray-400 font-[VerilySerif] text-sm">
+    {data.discordUserState}
+  </p>
 </FadeInSection>
 
 <FadeInSection>
@@ -246,7 +278,9 @@
 
 {#if activeA === "resume"}
   <section class="m-2" id="resume">
-    <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+    <h2
+      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+    >
       Resume
     </h2>
     <div class="w-250 h-auto">
@@ -258,7 +292,9 @@
 
 {#if activeA === "poetry"}
   <section class="m-2" id="poetry">
-    <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+    <h2
+      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+    >
       Poetry Books
     </h2>
     <div class="inline text-red-600 font-[VerilySerif] text-2xl py-3 px-1">
@@ -277,15 +313,22 @@
     <br /><br />
 
     {#each books as book}
-      <BookCard title={book.title} frontSrc={book.front} backSrc={book.back} 
-      pages={book.pages} description={book.description}/>
+      <BookCard
+        title={book.title}
+        frontSrc={book.front}
+        backSrc={book.back}
+        pages={book.pages}
+        description={book.description}
+      />
     {/each}
   </section>
 {/if}
 
 {#if activeA === "published"}
   <section class="m-2" id="published">
-    <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+    <h2
+      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+    >
       Published Work
     </h2>
     <details
@@ -314,7 +357,9 @@
 {/if}
 
 <FadeInSection>
-  <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+  <h2
+    class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+  >
     Creative Endeavors
   </h2>
 
@@ -336,7 +381,9 @@
 
 {#if activeB === "editing"}
   <section class="m-2" id="editing">
-    <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+    <h2
+      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+    >
       Editing Projects
     </h2>
     {#each edits as edit}
@@ -354,7 +401,9 @@
 
 {#if activeB === "essays"}
   <section class="m-2" id="essays">
-    <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+    <h2
+      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+    >
       Essays
     </h2>
     <details
@@ -407,7 +456,9 @@
 {/if}
 
 <FadeInSection>
-  <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3">
+  <h2
+    class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
+  >
     Contact
   </h2>
 
@@ -466,7 +517,9 @@
 </FadeInSection>
 
 <FadeInSection>
-  <h2 class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-4">
+  <h2
+    class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-4"
+  >
     Certifications
   </h2>
 
