@@ -15,7 +15,7 @@
   import poetry5back from "$lib/assets/poetry5back.webp";
   import poetry6 from "$lib/assets/poetry6.webp";
   import poetry6back from "$lib/assets/poetry6back.webp";
-  import type { SvelteComponent } from "svelte";
+
   import Particles from "$lib/components/Particles.svelte";
   import AudioPlayer from "$lib/components/AudioPlayer.svelte";
   import Typewriter from "$lib/components/Typewriter.svelte";
@@ -24,6 +24,7 @@
   import BookCard from "$lib/components/BookCard.svelte";
   import Editing from "$lib/components/Editing.svelte";
   import DayNight from "$lib/components/DayNight.svelte";
+  
   import Destination from "./Destination.svelte";
   import StateoftheCreek from "./State of the Creek.svelte";
   import EmotionalAbuse from "./Emotional Abuse.svelte";
@@ -41,8 +42,6 @@
   let name: string = $state("");
   let email: string = $state("");
   let isBuyer: boolean = $state(false);
-
-  let content: Partial<Record<ContentKey, AnySvelteComponent>> = {};
 
   type Book = {
     title: string;
@@ -173,29 +172,6 @@
   function toggleB(value: GroupB) {
     activeB = activeB === value ? null : value;
   }
-
-  type AnySvelteComponent = new (...args: any[]) => SvelteComponent;
-
-  const imports = {
-    Destination: () => import("./Destination.svelte"),
-    State_of_the_Creek: () => import("./State of the Creek.svelte"),
-    Emotional_Abuse: () => import("./Emotional Abuse.svelte"),
-    Lord_of_the_Lies: () => import("./Lord of the Lies.svelte"),
-    Animal_Farm: () => import("./Animal Farm.svelte"),
-    Kolkatas_Pollution_Crisis: () =>
-      import("./Kolkatas Pollution Crisis.svelte"),
-  } as const;
-
-  type ContentKey = keyof typeof imports;
-
-  async function loadContent() {
-    for (const key of Object.keys(imports) as ContentKey[]) {
-      if (!content[key]) {
-        const module = await imports[key]();
-        content[key] = module.default;
-      }
-    }
-  }
 </script>
 
 <DayNight />
@@ -210,13 +186,11 @@
 
 <Typewriter />
 
-<hr class="bg-white h-px mt-8 border-0.5 border-white opacity-70" />
-
 <FadeInSection>
   <span
     class="text-white font-[PrestigeElite] font-semibold text-[clamp(1.6rem,40vw,2rem)] mt-12 mb-1.5"
   >
-    Vikas Banerjee Murthy
+    Vikas Banerjee Murthy :3
   </span><br />
 
   <p class="text-gray-400 font-[VerilySerif] text-sm">
@@ -246,7 +220,7 @@
   bg-aroace-light-blue"
     >
       <p>
-        <em>Vikas [also mr_lemoncello and Noa Ellis] - they/them</em>
+        <strong>Vikas [also mr_lemoncello and Noa Ellis] -- they/them</strong>
       </p>
       <p>
         English, ein bisschen Deutsch, 一点普通话.<br />
@@ -277,25 +251,17 @@
 
 {#if activeA === "resume"}
   <section class="m-2" id="resume">
-    <h2
-      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-    >
-      Resume
-    </h2>
+    <h2>Resume</h2>
     <div class="w-250 h-auto">
       <img src={resume} alt="" />
     </div>
-    <br />
+    <br/>
   </section>
 {/if}
 
 {#if activeA === "poetry"}
   <section class="m-2" id="poetry">
-    <h2
-      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-    >
-      Poetry Books
-    </h2>
+    <h2>Poetry Books</h2>
     <div class="inline text-red-600 font-[VerilySerif] text-2xl py-3 px-1">
       Bundle Deal:
     </div>
@@ -325,47 +291,18 @@
 
 {#if activeA === "published"}
   <section class="m-2" id="published">
-    <h2
-      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-    >
-      Published Work
-    </h2>
-    <details
-      ontoggle={(e: Event) => {
-        const details = e.target as HTMLDetailsElement;
-        if (details.open) loadContent();
-      }}
-    >
-      <summary class="text-white font-[PrestigeElite] text-xl mb-0">
-        &nbsp;<em>Destination</em> - Published Dec 2025
-      </summary>
-      <Destination />
-    </details>
-    <details
-      ontoggle={(e: Event) => {
-        const details = e.target as HTMLDetailsElement;
-        if (details.open) loadContent();
-      }}
-    >
-      <summary class="text-white font-[PrestigeElite] text-xl mb-0">
-        &nbsp;State of the Creek Report: Hyla Woods 2023 - Published Dec 2023
-      </summary>
-      <StateoftheCreek />
-    </details>
+    <h2>Published Work</h2>
+    <Destination />
+    <StateoftheCreek />
   </section>
 {/if}
 
 <FadeInSection>
-  <h2
-    class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-  >
-    Creative Endeavors
-  </h2>
+  <h2>Creative Endeavors</h2>
 
   <div
     class="flex-wrap flex-row gap-1 justify-between content-stretch w-auto
-  p-1 m-3
-  bg-[hsl(215.09_46.09%_22.55%)] flex-background"
+  p-1 m-3 flex-background"
   >
     {#each groupB as btn}
       <MyButton
@@ -380,11 +317,7 @@
 
 {#if activeB === "editing"}
   <section class="m-2" id="editing">
-    <h2
-      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-    >
-      Editing Projects
-    </h2>
+    <h2>Editing Projects</h2>
     {#each edits as edit}
       <Editing
         title={edit.title}
@@ -400,71 +333,20 @@
 
 {#if activeB === "essays"}
   <section class="m-2" id="essays">
-    <h2
-      class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-    >
-      Essays
-    </h2>
-    <details
-      ontoggle={(e: Event) => {
-        const details = e.target as HTMLDetailsElement;
-        if (details.open) loadContent();
-      }}
-    >
-      <summary class="text-white font-[PrestigeElite] text-xl mb-0">
-        &nbsp;Emotionally Abusive Parenting and the Societal Structures That
-        Sanction It - 11 Nov 2025
-      </summary>
-      <EmotionalAbuse />
-    </details>
-    <details
-      ontoggle={(e: Event) => {
-        const details = e.target as HTMLDetailsElement;
-        if (details.open) loadContent();
-      }}
-    >
-      <summary class="text-white font-[PrestigeElite] text-xl mb-0">
-        &nbsp;William Golding: Lord of the Lies - 14 Apr 2025
-      </summary>
-      <LordoftheLies />
-    </details>
-    <details
-      ontoggle={(e: Event) => {
-        const details = e.target as HTMLDetailsElement;
-        if (details.open) loadContent();
-      }}
-    >
-      <summary class="text-white font-[PrestigeElite] text-xl mb-0">
-        &nbsp;Animal Farm and Nineteen Eighty-Four on Authoritarianism - 2 Apr
-        2025
-      </summary>
-      <AnimalFarm />
-    </details>
-    <details
-      ontoggle={(e: Event) => {
-        const details = e.target as HTMLDetailsElement;
-        if (details.open) loadContent();
-      }}
-    >
-      <summary class="text-white font-[PrestigeElite] text-xl mb-0">
-        &nbsp;A Chemical Analysis of Kolkata's Pollution Crisis - 4 Feb 2025
-      </summary>
-      <KolkatasPollutionCrisis />
-    </details>
+    <h2>Essays</h2>
+    <EmotionalAbuse />
+    <LordoftheLies />
+    <AnimalFarm />
+    <KolkatasPollutionCrisis />
   </section>
 {/if}
 
 <FadeInSection>
-  <h2
-    class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-3"
-  >
-    Contact
-  </h2>
+  <h2>Contact</h2>
 
   <div
     class="flex-row flex-wrap gap-1 justify-between content-center w-full
-  p-1 m-3
-  bg-[hsl(215.09_46.09%_22.55%)] flex-background"
+  p-1 m-3 flex-background"
   >
     <span
       class="flex-row content-center text-white font-[VerilySerif] text-xs"
@@ -516,11 +398,7 @@
 </FadeInSection>
 
 <FadeInSection>
-  <h2
-    class="text-white font-[PrestigeElite] text-[clamp(1rem,20vw,1.5rem)] mt-4"
-  >
-    Certifications
-  </h2>
+  <h2>Certifications</h2>
 
   <div
     class="flex-row flex-wrap gap-1 justify-between content-center w-auto
@@ -580,7 +458,7 @@
     z-index: -2;
     padding: 0px;
     height: 100vh;
-    background-image: url("http://localhost:5173/mr-lemoncello.github.io/src/lib/assets/background.webp");
+    background-image: "https://mr-lemoncello.github.io/src/lib/assets/background.webp";
     background-color: #1c1c1e;
     filter: brightness(30%) contrast(80%) blur(0.8px);
     object-fit: cover;

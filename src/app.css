@@ -114,3 +114,10 @@
   transition: opacity 4s;
   z-index: -2;
 }
+
+h2 {
+  color: white;
+  font-family: PrestigeElite;
+  font-size: clamp(1rem,20vw,1.5rem);
+  margin-top: 12px;
+}

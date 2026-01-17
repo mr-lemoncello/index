@@ -47,6 +47,7 @@
 <audio
   controls
   autoplay
+  class="pt-0 mt-0 w-full shadow-[0px_0px_25px_3px_rgba(255,0,128,0.8)] rounded-lg"
   src={playlist[index].src}
   onplay={() => {
     const track = playlist[index];
