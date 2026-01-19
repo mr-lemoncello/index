@@ -24,6 +24,7 @@
   import BookCard from "$lib/components/BookCard.svelte";
   import Editing from "$lib/components/Editing.svelte";
   import DayNight from "$lib/components/DayNight.svelte";
+  import Clouds from "$lib/components/Clouds.svelte";
   
   import Destination from "./Destination.svelte";
   import StateoftheCreek from "./State of the Creek.svelte";
@@ -177,6 +178,8 @@
 <DayNight />
 
 <Particles />
+
+<Clouds/>
 
 <meta
   name="description"
@@ -458,9 +461,7 @@
     z-index: -2;
     padding: 0px;
     height: 100vh;
-    background-image: "https://mr-lemoncello.github.io/src/lib/assets/background.webp";
     background-color: #1c1c1e;
-    filter: brightness(30%) contrast(80%) blur(0.8px);
     object-fit: cover;
     position: center;
   }
