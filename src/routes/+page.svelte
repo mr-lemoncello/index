@@ -254,7 +254,7 @@
 
 {#if activeA === "resume"}
   <section class="m-2" id="resume">
-    <h2>Resume</h2>
+    <h2 class="h2">Resume</h2>
     <div class="w-250 h-auto">
       <img src={resume} alt="" />
     </div>
@@ -264,7 +264,7 @@
 
 {#if activeA === "poetry"}
   <section class="m-2" id="poetry">
-    <h2>Poetry Books</h2>
+    <h2 class="h2">Poetry Books</h2>
     <div class="inline text-red-600 font-[VerilySerif] text-2xl py-3 px-1">
       Bundle Deal:
     </div>
@@ -294,14 +294,14 @@
 
 {#if activeA === "published"}
   <section class="m-2" id="published">
-    <h2>Published Work</h2>
+    <h2 class="h2">Published Work</h2>
     <Destination />
     <StateoftheCreek />
   </section>
 {/if}
 
 <FadeInSection>
-  <h2>Creative Endeavors</h2>
+  <h2 class="h2">Creative Endeavors</h2>
 
   <div
     class="flex-wrap flex-row gap-1 justify-between content-stretch w-auto
@@ -320,7 +320,7 @@
 
 {#if activeB === "editing"}
   <section class="m-2" id="editing">
-    <h2>Editing Projects</h2>
+    <h2 class="h2">Editing Projects</h2>
     {#each edits as edit}
       <Editing
         title={edit.title}
@@ -336,7 +336,7 @@
 
 {#if activeB === "essays"}
   <section class="m-2" id="essays">
-    <h2>Essays</h2>
+    <h2 class="h2">Essays</h2>
     <EmotionalAbuse />
     <LordoftheLies />
     <AnimalFarm />
@@ -345,7 +345,7 @@
 {/if}
 
 <FadeInSection>
-  <h2>Contact</h2>
+  <h2 class="h2">Contact</h2>
 
   <div
     class="flex-row flex-wrap gap-1 justify-between content-center w-full
@@ -401,7 +401,7 @@
 </FadeInSection>
 
 <FadeInSection>
-  <h2>Certifications</h2>
+  <h2 class="h2">Certifications</h2>
 
   <div
     class="flex-row flex-wrap gap-1 justify-between content-center w-auto

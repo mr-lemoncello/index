@@ -91,7 +91,7 @@
   <p
     id="typewriter-ghost"
     data-typewriter
-    class="invisible typewriter container w-full m-3 pr-40 pt-11 pb-8 font-[VerilySerif] text-white"
+    class="invisible typewriter container w-full m-3 pr-40 pt-12 pb-8 font-[VerilySerif] text-white"
   >
     <span class="block text-base md:text-lg leading-relaxed opacity-70 italic">
       The crow’s caws always deepen,

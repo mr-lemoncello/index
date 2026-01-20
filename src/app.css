@@ -115,9 +115,9 @@
   z-index: -2;
 }
 
-h2 {
+.h2 {
   color: white;
   font-family: PrestigeElite;
-  font-size: clamp(1rem,20vw,1.5rem);
+  font-size: clamp(1rem,20vw,1.8rem);
   margin-top: 12px;
 }
