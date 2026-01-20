@@ -36,6 +36,21 @@
   padding-top: 0;
 }
 
+.day-night {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  transition: opacity 4s;
+  z-index: -2;
+}
+
+.heading {
+  color: white;
+  font-family: PrestigeElite;
+  font-size: clamp(1rem,20vw,1.8rem);
+  margin-top: 12px;
+}
+
 .not-in-view {
   opacity: 0;
   transition: opacity 0.6s ease;
@@ -105,19 +120,4 @@
       transparent 3px,
       transparent 5px,
       rgba(0, 0, 0, 0.06) 5px);
-}
-
-.day-night {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  transition: opacity 4s;
-  z-index: -2;
-}
-
-.h2 {
-  color: white;
-  font-family: PrestigeElite;
-  font-size: clamp(1rem,20vw,1.8rem);
-  margin-top: 12px;
 }
