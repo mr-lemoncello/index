@@ -1,5 +1,6 @@
 <script lang="ts">
     import { animate } from "animejs";
+    import Promotion from "$lib/assets/8thGradePromotion-19.jpg"
 
     let wrapper!: HTMLDivElement;
     let isOpen = false;
@@ -71,7 +72,7 @@
             >
         </p>
 
-        <img src="src/lib/assets/8thGradePromotion-19.jpg" alt="8th Grade Promotion"/>
+        <img src={Promotion} alt="8th Grade Promotion"/>
 
         <p class="no-margin-text mt-2">In ink and ash, the panels sigh:</p>
         <p class="no-margin-text">A mouse with haunted, hollow eye.</p>
