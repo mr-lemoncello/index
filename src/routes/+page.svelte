@@ -1,177 +1,95 @@
 <script lang="ts">
   import image480 from "$lib/assets/file_480.webp";
-  import resume from "$lib/assets/resume.webp";
   import id_1 from "$lib/assets/id_1.webp";
   import id_2 from "$lib/assets/id_2.webp";
-  import poetry1 from "$lib/assets/poetry1.webp";
-  import poetry1back from "$lib/assets/poetry1back.webp";
-  import poetry2 from "$lib/assets/poetry2.webp";
-  import poetry2back from "$lib/assets/poetry2back.webp";
-  import poetry3 from "$lib/assets/poetry3.webp";
-  import poetry3back from "$lib/assets/poetry3back.webp";
-  import poetry4 from "$lib/assets/poetry4.webp";
-  import poetry4back from "$lib/assets/poetry4back.webp";
-  import poetry5 from "$lib/assets/poetry5.webp";
-  import poetry5back from "$lib/assets/poetry5back.webp";
-  import poetry6 from "$lib/assets/poetry6.webp";
-  import poetry6back from "$lib/assets/poetry6back.webp";
 
   import Particles from "$lib/components/Particles.svelte";
   import AudioPlayer from "$lib/components/AudioPlayer.svelte";
   import Typewriter from "$lib/components/Typewriter.svelte";
   import FadeInSection from "$lib/components/FadeInSection.svelte";
   import MyButton from "$lib/components/MyButton.svelte";
-  import BookCard from "$lib/components/BookCard.svelte";
-  import Editing from "$lib/components/Editing.svelte";
   import DayNight from "$lib/components/DayNight.svelte";
   import Clouds from "$lib/components/Clouds.svelte";
-  
-  import Destination from "./Destination.svelte";
-  import StateoftheCreek from "./State of the Creek.svelte";
-  import EmotionalAbuse from "./Emotional Abuse.svelte";
-  import AnimalFarm from "./Animal Farm.svelte";
-  import LordoftheLies from "./Lord of the Lies.svelte";
-  import KolkatasPollutionCrisis from "./Kolkatas Pollution Crisis.svelte";
+
+  import { animate } from "animejs";
+  import Navbar from "$lib/components/Navbar.svelte";
+  import { goto } from "$app/navigation";
 
   let song = $state("none");
   let { data } = $props();
 
   let activeA: GroupA | null = $state(null);
-  let activeB: GroupB | null = $state(null);
   let bg: string = $state("");
-  let bg2: string = "";
-  let name: string = $state("");
-  let email: string = $state("");
-  let isBuyer: boolean = $state(false);
-
-  type Book = {
-    title: string;
-    front: string;
-    back: string;
-    pages: string;
-    description: string;
-  };
-
-  type Edit = {
-    title: string;
-    link: string;
-    date: string;
-    description: string;
-    more: string;
-    music: string;
-  };
 
   type GroupA = "resume" | "poetry" | "published";
-  type GroupB = "editing" | "essays" | "worldbuilding";
-
-  const books: Book[] = [
-    {
-      title: "Book 1: Of the Other Shore",
-      front: poetry1,
-      back: poetry1back,
-      pages: "11 pages",
-      description: "On grief, loss, and hope things will get better",
-    },
-    {
-      title: "Book 2: Through the Fingers",
-      front: poetry2,
-      back: poetry2back,
-      pages: "23 pages",
-      description: "On moments of shock and hopelessness",
-    },
-    {
-      title: "Book 3: Burnt into Being",
-      front: poetry3,
-      back: poetry3back,
-      pages: "17 pages",
-      description: "On rage, revolution, and the fire that inspires us",
-    },
-    {
-      title: "Book 4: Seeds in Ash",
-      front: poetry4,
-      back: poetry4back,
-      pages: "19 pages",
-      description: "On isolation , redeption, and resilience",
-    },
-    {
-      title: "Book 5: Love Letters",
-      front: poetry5,
-      back: poetry5back,
-      pages: "35 pages",
-      description: "On love, existentialism, and cathartic release",
-    },
-    {
-      title: "Book 6: Bridges in Low Light",
-      front: poetry6,
-      back: poetry6back,
-      pages: "15 pages",
-      description: "On the highs and lows of urban living",
-    },
-  ];
-
-  const edits: Edit[] = [
-    {
-      title: "Ink and Blood: The Lines That Divide Us",
-      link: "https://www.youtube.com/embed/S4SFCWFjZcs",
-      date: "Nov 11, 2025",
-      description:
-        "Original creative writing piece by Noa Ellis, presented in kinetic typography format",
-      more: `"Inspired by the prompt: How do the borders drawn by colonial powers without 
-      the necessary considerations for the long-term impacts, or in some cases, 
-      intentional sabotage, lead to decades-long instabilities in regions that 
-      had not previously been unstable?`,
-      music: "Music by Whitesand (Martynas Lau) - My Spirit Is Free (2018)",
-    },
-    {
-      title: "1844 FRC 2025 Season Recap",
-      link: "https://www.youtube.com/embed/aNfTetDGJ7g",
-      date: "Apr 23, 2025",
-      description:
-        "Recap of rookie team FRC1844's 2025 season and their main season-robot Private",
-      more: `Following the design, creation, and competitive run of FIRST Robotics Competition 
-      team 1844: the Eggineers, rookie team of FRC1540: the Flaming Chickens`,
-      music: "Music by Creo - Unveil (2019)",
-    },
-    {
-      title: "Meet 1844, The EGGINEERS!",
-      link: "https://www.youtube.com/embed/sk3-40_Vvy0",
-      date: "Feb 6, 2025",
-      description:
-        "Introduction to rookie team FRC1844, following their win at FRC1540's 2025 BunnyBots",
-      more: `An introduction to the FIRST Robotics Competition team 1844: the Eggineers, 
-      rookie team of FRC1540: the Flaming Chickens; includes interviews 
-      with prominent FRC1540 members`,
-      music: "Music by TheFatRat - Unity (2016)",
-    },
-    {
-      title: "1844 BunnyBots Recap",
-      link: "https://www.youtube.com/embed/e7vN35rVPeI",
-      date: "Feb 6, 2025",
-      description:
-        "Recap of FRC1844's off-season and competition win at FRC1540's BunnyBots 2025",
-      more: `Following the off-season design, creation, and competition run of 
-      FIRST Robotics Competition team 1844: the Eggineers, rookie team of FRC1540 
-      and their tournament win at BunnyBots 2025, hosted by FRC1540`,
-      music: "Music by Thomas Bergersen, Two Steps From Hell - Victory (2017)",
-    },
-  ];
 
   const groupA: { label: string; value: GroupA }[] = [
     { label: "Resume", value: "resume" },
     { label: "Poetry Books", value: "poetry" },
     { label: "Published Work", value: "published" },
   ];
-  const groupB: { label: string; value: GroupB }[] = [
-    { label: "Editing Projects", value: "editing" },
-    { label: "Essay Samples", value: "essays" },
-    { label: "Worldbuilding", value: "worldbuilding" },
+
+  type Link = {
+    name: string;
+    href: string;
+    icon: string;
+    hover: string;
+    glow: string;
+  };
+
+  const links: Link[] = [
+    {
+      name: "YouTube",
+      href: "https://www.youtube.com/channel/UC5qwrUuAOktVPydz6VLHW1w",
+      icon: "fa-youtube",
+      hover: "bg-[#FF0000]",
+      glow: "shadow-[0_0_18px_#ff0000aa]",
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/mr-lemoncello",
+      icon: "fa-github",
+      hover: "bg-[#24292e]",
+      glow: "shadow-[0_0_18px_#ffffff66]",
+    },
   ];
+
+  function enter(label: HTMLSpanElement, icon: HTMLElement) {
+    animate(label, {
+      width: label.scrollWidth,
+      opacity: 1,
+      marginInline: "0.75rem",
+      duration: 400,
+      easing: "ease-out-cubic",
+    });
+
+    animate(icon, {
+      scale: [1, 1.25, 1.1],
+      rotate: [0, 10, -8, 0],
+      duration: 500,
+      easing: "ease-out-back",
+    });
+  }
+
+  function leave(label: HTMLSpanElement, icon: HTMLElement) {
+    animate(label, {
+      width: 0,
+      opacity: 0,
+      marginInline: 0,
+      duration: 250,
+      easing: "ease-in-cubic",
+    });
+
+    animate(icon, {
+      scale: 1,
+      rotate: 0,
+      duration: 200,
+    });
+  }
 
   function toggleA(value: GroupA) {
     activeA = activeA === value ? null : value;
-  }
-  function toggleB(value: GroupB) {
-    activeB = activeB === value ? null : value;
+    goto(`/${activeA}`);
   }
 </script>
 
@@ -179,7 +97,7 @@
 
 <Particles />
 
-<Clouds/>
+<Clouds />
 
 <meta
   name="description"
@@ -187,16 +105,19 @@
   displaying creative projects and the stuff I get up to."
 />
 
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+</svelte:head>
+
 <Typewriter />
 
-<FadeInSection>
-  <span
-    class="text-white font-[PrestigeElite] font-semibold text-[clamp(1.6rem,40vw,2rem)] mt-12 mb-1.5"
-  >
-    Vikas Banerjee Murthy :3
-  </span><br />
+<Navbar active="home"/>
 
-  <p class="text-gray-400 font-[VerilySerif] text-sm">
+<FadeInSection>
+  <p class="text-gray-400 font-[VerilySerif] mt-3 text-sm">
     {data.discordUserState}
   </p>
 </FadeInSection>
@@ -204,17 +125,58 @@
 <FadeInSection>
   <div
     class="flex-row gap-1 justify-between content-stretch w-full
-  p-1 m-3 flex-background"
+  p-1 mx-3 mb-3 flex-background"
   >
-    <div
-      class="m-2.5 border-5 border-aroace-yellow rounded-full
+    <div class="flex flex-col">
+      <div
+        class="m-2.5 border-5 border-aroace-yellow rounded-full
     w-55 h-55 transition-[width, height] duration-1000 ease-in-out
     shrink-0 overflow-hidden hover:w-90 hover:h-90"
-      role="tooltip"
-      id="file_480"
-      aria-label="Photo of Vikas Banerjee Murthy"
-    >
-      <img class="block object-cover" src={image480} alt="" />
+        role="tooltip"
+        id="file_480"
+        aria-label="Photo of Vikas Banerjee Murthy"
+      >
+        <img class="block object-cover" src={image480} alt="" />
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        {#each links as link}
+          <div
+            class="social-pill bg-white/10 backdrop-blur-xl rounded-full border border-white/10 shadow-lg"
+          >
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener"
+              class="flex no-underline items-center text-white focus:outline-none focus-visible:ring-2 
+              ring-white/70 rounded-full"
+              onmouseenter={(e) =>
+                enter(
+                  e.currentTarget.querySelector("span")!,
+                  e.currentTarget.querySelector(".icon")!,
+                )}
+              onmouseleave={(e) =>
+                leave(
+                  e.currentTarget.querySelector("span")!,
+                  e.currentTarget.querySelector(".icon")!,
+                )}
+            >
+              <div
+                class={`icon no-underline h-12 w-12 flex items-center justify-center rounded-full text-2xl transition-all 
+                duration-300 ${link.hover} ${link.glow}`}
+              >
+                <i class={`fa-brands ${link.icon}`}></i>
+              </div>
+
+              <span
+                class="text-sm no-underline font-semibold tracking-wide overflow-hidden whitespace-nowrap"
+                style="width:0; opacity:0"
+              >
+                {link.name}
+              </span>
+            </a>
+          </div>
+        {/each}
+      </div>
     </div>
     <div
       class="inline-flex flex-wrap flex-col justify-around
@@ -252,154 +214,6 @@
   </div>
 </FadeInSection>
 
-{#if activeA === "resume"}
-  <section class="m-2" id="resume">
-    <h2 class="heading">Resume</h2>
-    <div class="w-250 h-auto">
-      <img src={resume} alt="" />
-    </div>
-    <br/>
-  </section>
-{/if}
-
-{#if activeA === "poetry"}
-  <section class="m-2" id="poetry">
-    <h2 class="heading">Poetry Books</h2>
-    <div class="inline text-red-600 font-[VerilySerif] text-2xl py-3 px-1">
-      Bundle Deal:
-    </div>
-    <div class="inline text-white font-[VerilySerif] text-2xl p-1">
-      <sup>$</sup>24<sup>99*</sup>
-    </div>
-    <br />
-    <div class="inline text-white font-[VerilySerif] text-xl p-6">
-      List Price:
-      <span style="color:red;text-decoration:line-through">
-        <span style="color:gray">$29.99</span>
-      </span>
-    </div>
-    <br /><br />
-
-    {#each books as book}
-      <BookCard
-        title={book.title}
-        frontSrc={book.front}
-        backSrc={book.back}
-        pages={book.pages}
-        description={book.description}
-      />
-    {/each}
-  </section>
-{/if}
-
-{#if activeA === "published"}
-  <section class="m-2" id="published">
-    <h2 class="heading">Published Work</h2>
-    <Destination />
-    <StateoftheCreek />
-  </section>
-{/if}
-
-<FadeInSection>
-  <h2 class="heading">Creative Endeavors</h2>
-
-  <div
-    class="flex-wrap flex-row gap-1 justify-between content-stretch w-auto
-  p-1 m-3 flex-background"
-  >
-    {#each groupB as btn}
-      <MyButton
-        label={btn.label}
-        isActive={activeB === btn.value}
-        toggle={() => toggleB(btn.value)}
-      />
-    {/each}
-  </div>
-  <br />
-</FadeInSection>
-
-{#if activeB === "editing"}
-  <section class="m-2" id="editing">
-    <h2 class="heading">Editing Projects</h2>
-    {#each edits as edit}
-      <Editing
-        title={edit.title}
-        link={edit.link}
-        date={edit.date}
-        description={edit.description}
-        more={edit.more}
-        music={edit.music}
-      />
-    {/each}
-  </section>
-{/if}
-
-{#if activeB === "essays"}
-  <section class="m-2" id="essays">
-    <h2 class="heading">Essays</h2>
-    <EmotionalAbuse />
-    <LordoftheLies />
-    <AnimalFarm />
-    <KolkatasPollutionCrisis />
-  </section>
-{/if}
-
-<FadeInSection>
-  <h2 class="heading">Contact</h2>
-
-  <div
-    class="flex-row flex-wrap gap-1 justify-between content-center w-full
-  p-1 m-3 flex-background"
-  >
-    <span
-      class="flex-row content-center text-white font-[VerilySerif] text-xs"
-      id="input1"
-    >
-      Name:
-    </span>
-    <input type="text" bind:value={name} aria-label="Name" /><br />
-    <span
-      class="flex-row content-center text-white font-[VerilySerif] text-xs"
-      id="input2"
-    >
-      Email:
-    </span>
-    <input type="text" bind:value={email} aria-label="Email" /><br />
-    <label for="On 1540?"></label>
-    <span
-      class="flex-row content-center text-white font-[VerilySerif] text-xs"
-      id="input3"
-    >
-      Interested in buying?
-    </span>
-    <input
-      type="checkbox"
-      bind:checked={isBuyer}
-      aria-label="Interested in buying?"
-    /><label for="Interested in buying?"></label>
-    <my-button
-      class="flex-row content-center with-margin-text
-    transition-[width, height] duration-750 ease-in-out
-    hover:scale-110"
-      role="button"
-      tabindex="-1"
-      id="my-button6"
-      onmouseover={() => {
-        bg2 = "#396488";
-      }}
-      onfocus={() => {
-        bg2 = "#396488";
-      }}
-      onmouseout={() => {
-        bg2 = "#1f3554";
-      }}
-      onblur={() => {
-        bg2 = "#1f3554";
-      }}>Submit</my-button
-    >
-  </div>
-</FadeInSection>
-
 <FadeInSection>
   <h2 class="heading">Certifications</h2>
 
@@ -413,8 +227,6 @@
   </div>
 
   <br /> <br /> <br /> <br />
-  <p class="text-white font-[VerilySerif] text-xs">*cash only</p>
-  <br /> <br /> <br />
 </FadeInSection>
 
 <div
@@ -442,11 +254,11 @@
   <p class="content-normal with-margin-text mb-0">
     &copy; 2025 Vikas Banerjee Murthy. All rights reserved. Having trouble with
     the form? Contact me at:&nbsp;
+  </p>
+  <p class="content-normal with-margin-text mb-0">
     <a class="text-aroace-light-blue" href="mailto:vikasarino@gmail.com">
       vikasarino@gmail.com</a
-    >
-  </p>
-  <p>
+    ><br />
     <em class="content-normal text-gray-400 font-[VerilySerif] text-sm mb-0"
       >now playing: {song}</em
     >

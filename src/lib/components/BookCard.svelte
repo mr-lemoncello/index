@@ -1,10 +1,6 @@
 <script lang="ts">
-  export let title: string;
-  export let frontSrc: string;
-  export let backSrc: string;
-  export let pages: string;
-  export let description: string;
-  let activeSide: 'front' | 'back' = 'front';
+  let { title, frontSrc, backSrc, pages, description } = $props();
+  let activeSide: 'front' | 'back' = $state('front');
 </script>
 
 <p class="text-white font-[PrestigeElite] text-xl mb-0">{title}</p>

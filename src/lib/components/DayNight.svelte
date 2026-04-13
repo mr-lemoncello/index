@@ -2,7 +2,6 @@
     let dayFactor = $state(0);
     let time: number = 0;
 
-    // returns 0 → night, 1 → noon
     function getDayFactor(time: number) {
         const result = (1 - Math.cos((2 * Math.PI * time) / 500)) / 2;
         return result;

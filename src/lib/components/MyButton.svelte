@@ -1,11 +1,13 @@
 <svelte:options customElement="my-element" />
 
 <script lang="ts">
-    export let label: string;
-    export let isActive: boolean;
-    export let toggle: () => void;
+    let { label, isActive, toggle } = $props<{
+        label: string;
+        isActive: boolean;
+        toggle: () => void;
+    }>();
 
-    let hover = false;
+    let hover = $state(false);
 </script>
 
 <my-button
