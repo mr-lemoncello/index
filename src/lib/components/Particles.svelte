@@ -34,7 +34,7 @@
             pos.x += speed * t * 60.0;
             pos.x = mod(pos.x, iResolution.x);
 
-            pos.y += sin(offset + t * speed);
+            pos.y += sin(offset + t * speed) * 3.0;
 
             vec2 clip = (pos / iResolution) * 2.0 - 1.0;
             clip.y *= -1.0;
@@ -93,7 +93,7 @@
     const speedData: number[] = [];
 
     function resizeParticles(w: number, h: number) {
-      const target = Math.floor((w * h) / (26400 + h));
+      const target = Math.floor((w * h) / (52800 + h));
 
       if (target === particles || gl === null) return;
 
@@ -106,7 +106,7 @@
 
       for (let i = 0; i < particles; i++) {
         posData.push(Math.random() * w, Math.random() * h);
-        sizeData.push(Math.floor(Math.random() * 5));
+        sizeData.push(2 + Math.random() * 6);
         offsetData.push(Math.random() * Math.PI);
         speedData.push(0.25 + Math.random() * 5);
       }

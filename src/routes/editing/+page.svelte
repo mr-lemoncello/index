@@ -17,12 +17,20 @@
 
   const edits: Edit[] = [
     {
+      title: "Coherence Illusion: The Institutional Regulation of Trans Life",
+      link: "https://www.youtube.com/embed/4la1tlvn9to",
+      date: "Apr 24, 2026",
+      description: "Original video essay by Noa Ellis",
+      more: `Inspired by the prompt: How has institutional language been used to construct, police, and erase gender deviance within 20th century Western medicine, law, and sport?`,
+      music: "Music by Lena Raine - Celeste OST",
+    },
+    {
       title: "Requiem of a Suicide",
       link: "https://www.youtube.com/embed/wAoBbREm4mY",
       date: "Feb 25, 2026",
       description: "Original short film by Noa Ellis",
       more: `Inspired by the prompt: How does systemic racism and discrimination contribute to the mental health crises within communities of color?`,
-      music: "Film Soundtrack by Noa Ellis",
+      music: "Music by Noa Ellis - Film Soundtrack",
     },
     {
       title: "Ink and Blood: The Lines That Divide Us",
@@ -77,7 +85,7 @@
 
 <Clouds />
 
-<Navbar active="editing"/>
+<Navbar active="editing" />
 
 <section class="m-2" id="editing">
   <h2 class="heading">Editing Projects</h2>
