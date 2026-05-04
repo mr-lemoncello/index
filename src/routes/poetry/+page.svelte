@@ -11,6 +11,10 @@
     import poetry5back from "$lib/assets/poetry5back.webp";
     import poetry6 from "$lib/assets/poetry6.webp";
     import poetry6back from "$lib/assets/poetry6back.webp";
+    import poetry7 from "$lib/assets/poetry7.webp";
+    import poetry7back from "$lib/assets/poetry7back.webp";
+    import poetry8 from "$lib/assets/poetry8.webp";
+    import poetry8back from "$lib/assets/poetry8back.webp";
     import BookCard from "$lib/components/BookCard.svelte";
 
     import Particles from "$lib/components/Particles.svelte";
@@ -70,6 +74,20 @@
             pages: "15 pages",
             description: "On the highs and lows of urban living",
         },
+        {
+            title: "Book 7: I Used to Float",
+            front: poetry7,
+            back: poetry7back,
+            pages: "21 pages",
+            description: "On the fragile search for connection and selfhood in a fractured world",
+        },
+        {
+            title: "Book 8: Wingless Crows; Lead Messengers",
+            front: poetry8,
+            back: poetry8back,
+            pages: "29 pages",
+            description: "On ruin, memory, and the fragile persistence of love amid violence and decay",
+        }
     ];
 </script>
 
