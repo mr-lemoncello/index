@@ -33,39 +33,20 @@
 
     const books: Book[] = [
         {
-            title: "Book 1: Of the Other Shore",
-            front: poetry1,
-            back: poetry1back,
-            pages: "11 pages",
-            description: "On grief, loss, and hope things will get better",
+            title: "Book 8: Wingless Crows; Lead Messengers",
+            front: poetry8,
+            back: poetry8back,
+            pages: "29 pages",
+            description:
+                "On ruin, memory, and the fragile persistence of love amid violence and decay",
         },
         {
-            title: "Book 2: Through the Fingers",
-            front: poetry2,
-            back: poetry2back,
-            pages: "23 pages",
-            description: "On moments of shock and hopelessness",
-        },
-        {
-            title: "Book 3: Burnt into Being",
-            front: poetry3,
-            back: poetry3back,
-            pages: "17 pages",
-            description: "On rage, revolution, and the fire that inspires us",
-        },
-        {
-            title: "Book 4: Seeds in Ash",
-            front: poetry4,
-            back: poetry4back,
-            pages: "19 pages",
-            description: "On isolation , redeption, and resilience",
-        },
-        {
-            title: "Book 5: Love Letters",
-            front: poetry5,
-            back: poetry5back,
-            pages: "35 pages",
-            description: "On love, existentialism, and cathartic release",
+            title: "Book 7: I Used to Float",
+            front: poetry7,
+            back: poetry7back,
+            pages: "21 pages",
+            description:
+                "On the fragile search for connection and selfhood in a fractured world",
         },
         {
             title: "Book 6: Bridges in Low Light",
@@ -75,19 +56,40 @@
             description: "On the highs and lows of urban living",
         },
         {
-            title: "Book 7: I Used to Float",
-            front: poetry7,
-            back: poetry7back,
-            pages: "21 pages",
-            description: "On the fragile search for connection and selfhood in a fractured world",
+            title: "Book 5: Love Letters",
+            front: poetry5,
+            back: poetry5back,
+            pages: "35 pages",
+            description: "On love, existentialism, and cathartic release",
         },
         {
-            title: "Book 8: Wingless Crows; Lead Messengers",
-            front: poetry8,
-            back: poetry8back,
-            pages: "29 pages",
-            description: "On ruin, memory, and the fragile persistence of love amid violence and decay",
-        }
+            title: "Book 4: Seeds in Ash",
+            front: poetry4,
+            back: poetry4back,
+            pages: "19 pages",
+            description: "On isolation , redeption, and resilience",
+        },
+        {
+            title: "Book 3: Burnt into Being",
+            front: poetry3,
+            back: poetry3back,
+            pages: "17 pages",
+            description: "On rage, revolution, and the fire that inspires us",
+        },
+        {
+            title: "Book 2: Through the Fingers",
+            front: poetry2,
+            back: poetry2back,
+            pages: "23 pages",
+            description: "On moments of shock and hopelessness",
+        },
+        {
+            title: "Book 1: Of the Other Shore",
+            front: poetry1,
+            back: poetry1back,
+            pages: "11 pages",
+            description: "On grief, loss, and hope things will get better",
+        },
     ];
 </script>
 
@@ -97,24 +99,10 @@
 
 <Clouds />
 
-<Navbar active="poetry"/>
+<Navbar active="poetry" />
 
 <section class="m-2" id="poetry">
     <h2 class="heading">Poetry Books</h2>
-    <div class="inline text-red-600 font-[VerilySerif] text-2xl py-3 px-1">
-        Bundle Deal:
-    </div>
-    <div class="inline text-white font-[VerilySerif] text-2xl p-1">
-        <sup>$</sup>24<sup>99*</sup>
-    </div>
-    <br />
-    <div class="inline text-white font-[VerilySerif] text-xl p-6">
-        List Price:
-        <span style="color:red;text-decoration:line-through">
-            <span style="color:gray">$29.99</span>
-        </span>
-    </div>
-    <br /><br />
 
     {#each books as book}
         <BookCard
@@ -127,21 +115,21 @@
     {/each}
 </section>
 
-<Footer/>
+<Footer />
 
 <style>
-  :global(body)::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    padding: 0px;
-    height: 100vh;
-    background-color: #1c1c1e;
-    object-fit: cover;
-    position: center;
-  }
-  :global(body) {
-    margin: 40px;
-  }
+    :global(body)::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        padding: 0px;
+        height: 100vh;
+        background-color: #1c1c1e;
+        object-fit: cover;
+        position: center;
+    }
+    :global(body) {
+        margin: 40px;
+    }
 </style>

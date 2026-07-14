@@ -3,7 +3,7 @@
     import MrLemoncello from "$lib/assets/mr-lemoncello.png"
     import Catan from "$lib/assets/catan.jpg"
     
-    import Coding from "$lib/components/Coding.svelte";
+    import Coding from "$lib/components/Programming.svelte";
     import Particles from "$lib/components/Particles.svelte";
     import DayNight from "$lib/components/DayNight.svelte";
     import Clouds from "$lib/components/Clouds.svelte";
@@ -40,15 +40,7 @@
             link: "https://cs.catlin.edu/catan",
             description:
                 "Online multiplayer Settlers of Catan, a popular Eurogame where players build settlements, cities, and roads on a fictional island",
-        },
-        {
-            title: "Catena",
-            image: "",
-            github: "https://github.com/mr-lemoncello/catena",
-            link: "",
-            description:
-                "Portal and file-sharing app for media members of First Robotics Competition PNW",
-        },
+        }
     ];
 </script>
 
@@ -58,7 +50,7 @@
 
 <Clouds />
 
-<Navbar active="coding" />
+<Navbar active="programming" />
 
 <section class="m-2" id="coding">
     <h2 class="heading">Coding Projects</h2>

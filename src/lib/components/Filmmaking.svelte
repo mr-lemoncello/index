@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { title, link, date, description, more, music } = $props();
+    let { title, link, roles, date, description, more, music, drive="" } = $props();
 </script>
 
 <p class="text-white font-[PrestigeElite] text-xl mb-0 mt-1 pb-0">
@@ -30,6 +30,9 @@
     >
         <strong class="pb-1">{date}</strong>
         <span class="pb-px"
+            ><em>{roles}</em></span
+        >
+        <span class="pb-px"
             >{description}</span
         >
         <span class="pb-px"
@@ -38,5 +41,11 @@
         <span class="pb-px"
             >{music}</span
         >
+
+        {#if drive !== ""}
+        <span class="pb-px"
+            ><a href={drive}>Drive</a></span
+        >
+        {/if}
     </div>
 </div>

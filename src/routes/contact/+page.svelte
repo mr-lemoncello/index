@@ -6,6 +6,8 @@
   import Footer from "$lib/components/Footer.svelte";
   import FadeInSection from "$lib/components/FadeInSection.svelte";
 
+  let bg: string = $state("");
+
   let name: string = $state("");
   let email: string = $state("");
   let message: string = $state("");
@@ -105,6 +107,25 @@
     {/if}
   </div>
 </FadeInSection>
+
+<div
+  id="footer"
+  class="flex-col fixed bottom-0 w-auto
+  p-2 m-4 flex-background
+  transition-[width, height] duration-500 ease-in-out
+  hover:scale-105"
+  role="tooltip"
+  aria-label="Footer"
+  style:background={bg}
+>
+  <p class="content-normal with-margin-text mb-0">
+    Having trouble with the form? Contact me at:&nbsp;
+  </p>
+  <p class="content-normal with-margin-text mb-0">
+    <a class="text-aroace-light-blue" href="mailto:vikasarino@gmail.com">
+      vikasarino@gmail.com</a>
+  </p>
+</div>
 
 <Footer />
 

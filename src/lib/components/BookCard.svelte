@@ -49,23 +49,6 @@
   />
 
   <div class="content-center">
-    <div class="inline text-red-600 font-[VerilySerif] text-xl py-3 px-1">
-      -50% Insecurity Discount:
-    </div>
-
-    <div class="inline text-white font-[VerilySerif] text-xl p-1">
-      <sup>$</sup>4<sup>99*</sup>
-    </div>
-
-    <br />
-
-    <div class="inline text-white font-[VerilySerif] text-lg p-6">
-      List Price:
-      <span class="text-red-600 line-through">
-        <span class="text-gray-400">$9.99</span>
-      </span>
-    </div>
-
     <em class="text-white font-[VerilySerif] text-lg p-6">{pages}</em>
     <p class='text-white font-[VerilySerif] text-lg p-6'>{description}</p>
 

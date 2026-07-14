@@ -1,33 +1,20 @@
 <script lang="ts">
   import image480 from "$lib/assets/file_480.webp";
-  import id_1 from "$lib/assets/id_1.webp";
-  import id_2 from "$lib/assets/id_2.webp";
 
   import Particles from "$lib/components/Particles.svelte";
   import AudioPlayer from "$lib/components/AudioPlayer.svelte";
   import Typewriter from "$lib/components/Typewriter.svelte";
   import FadeInSection from "$lib/components/FadeInSection.svelte";
-  import MyButton from "$lib/components/MyButton.svelte";
   import DayNight from "$lib/components/DayNight.svelte";
   import Clouds from "$lib/components/Clouds.svelte";
 
   import { animate } from "animejs";
   import Navbar from "$lib/components/Navbar.svelte";
-  import { goto } from "$app/navigation";
 
   let song = $state("none");
   let { data } = $props();
 
-  let activeA: GroupA | null = $state(null);
   let bg: string = $state("");
-
-  type GroupA = "resume" | "poetry" | "published";
-
-  const groupA: { label: string; value: GroupA }[] = [
-    { label: "Resume", value: "resume" },
-    { label: "Poetry Books", value: "poetry" },
-    { label: "Published Work", value: "published" },
-  ];
 
   type Link = {
     name: string;
@@ -85,11 +72,6 @@
       rotate: 0,
       duration: 200,
     });
-  }
-
-  function toggleA(value: GroupA) {
-    activeA = activeA === value ? null : value;
-    goto(`/${activeA}`);
   }
 </script>
 
@@ -185,12 +167,13 @@
   bg-aroace-light-blue"
     >
       <p>
-        <strong>Vikas [also mr_lemoncello and Noa Ellis] -- they/them</strong>
+        <strong>Vikas Banerjee Murthy [also mr_lemoncello and Noa Ellis] -- they/them</strong>
       </p>
       <p>
         English, ein bisschen Deutsch, 一点普通话.<br />
-        I like lots of stuff, but I'm too lazy to write it all here. Here's a few
-        for your troubles: poetry/writing, filmmaking, music, biking. Born Aug 2011.
+        Filmmaker, poet, and composer from Portland, OR.
+        I also enjoy biking, speech & debate, and playing <em>Celeste</em>.
+        Born Aug 2011.
       </p>
       <span class="mb-1">some music :3&nbsp;</span><AudioPlayer
         onSongChange={(title) => (song = title)}
@@ -199,35 +182,7 @@
   </div>
 </FadeInSection>
 
-<FadeInSection>
-  <div
-    class="flex-row flex-wrap gap-1 justify-between content-stretch w-auto
-  p-1 m-3 flex-background"
-  >
-    {#each groupA as btn}
-      <MyButton
-        label={btn.label}
-        isActive={activeA === btn.value}
-        toggle={() => toggleA(btn.value)}
-      />
-    {/each}
-  </div>
-</FadeInSection>
-
-<FadeInSection>
-  <h2 class="heading">Certifications</h2>
-
-  <div
-    class="flex-row flex-wrap gap-1 justify-between content-center w-auto
-  p-1 m-3
-  flex-background"
-  >
-    <img src={id_1} alt="" width="200" />
-    <img src={id_2} alt="" width="200" />
-  </div>
-
-  <br /> <br /> <br /> <br />
-</FadeInSection>
+<br/><br/><br/>
 
 <div
   id="footer"
@@ -235,30 +190,12 @@
   p-2 m-4 flex-background
   transition-[width, height] duration-500 ease-in-out
   hover:scale-105"
+
   role="tooltip"
   aria-label="Footer"
   style:background={bg}
-  onmouseover={() => {
-    bg = "#396488";
-  }}
-  onfocus={() => {
-    bg = "#396488";
-  }}
-  onmouseout={() => {
-    bg = "#1f3554";
-  }}
-  onblur={() => {
-    bg = "#1f3554";
-  }}
 >
   <p class="content-normal with-margin-text mb-0">
-    &copy; 2025 Vikas Banerjee Murthy. All rights reserved. Having trouble with
-    the form? Contact me at:&nbsp;
-  </p>
-  <p class="content-normal with-margin-text mb-0">
-    <a class="text-aroace-light-blue" href="mailto:vikasarino@gmail.com">
-      vikasarino@gmail.com</a
-    ><br />
     <em class="content-normal text-gray-400 font-[VerilySerif] text-sm mb-0"
       >now playing: {song}</em
     >

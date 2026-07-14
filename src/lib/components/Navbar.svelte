@@ -12,18 +12,20 @@
             class="text-[20px] text-white py-3.5 px-4 flex items-center gap-1 hover:bg-[rgba(140,179,223,0.7)] no-underline! hover:no-underline!"
         >
             <span
-    class={`no-underline ${
-        ["resume", "contact"].includes(active)
-            ? "underline underline-offset-8"
-            : ""
-    }`}
->
-    Vikas Banerjee Murthy
-</span>
+                class={`no-underline ${
+                    ["resume", "contact"].includes(active)
+                        ? "underline underline-offset-8"
+                        : ""
+                }`}
+            >
+                Vikas Banerjee Murthy
+            </span>
             <em class="text-[20px] fa fa-caret-down"></em>
         </a>
 
-        <div class="absolute left-0 hidden min-w-40 bg-[#f9f9f9] shadow-lg group-hover:block z-10">
+        <div
+            class="absolute left-0 hidden min-w-40 bg-[#f9f9f9] shadow-lg group-hover:block z-10"
+        >
             <a
                 href="/resume"
                 class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
@@ -39,24 +41,28 @@
         </div>
     </div>
 
-    <!-- Writing -->
+    <!-- Creative -->
     <div class="relative group">
-        <button
-            class="text-[20px] text-white py-3.5 px-4 flex items-center gap-1 hover:bg-[rgba(140,179,223,0.7)]"
+        <a
+            href="/"
+            target="_self"
+            class="text-[20px] text-white py-3.5 px-4 flex items-center gap-1 hover:bg-[rgba(140,179,223,0.7)] no-underline! hover:no-underline!"
         >
             <span
-                class={`${
-                    ["poetry", "published", "essays"].includes(active)
+                class={`no-underline ${
+                    ["poetry", "published", "progr"].includes(active)
                         ? "underline underline-offset-8"
                         : ""
                 }`}
             >
-                Writing
+                Creative Endeavors
             </span>
             <em class="text-[20px] fa fa-caret-down"></em>
-        </button>
+        </a>
 
-        <div class="absolute right-0 hidden min-w-50 bg-[#f9f9f9] shadow-lg group-hover:block z-10">
+        <div
+            class="absolute right-0 hidden min-w-40 bg-[#f9f9f9] shadow-lg group-hover:block z-10"
+        >
             <a
                 href="/poetry"
                 class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
@@ -70,44 +76,29 @@
                 Published Work
             </a>
             <a
-                href="/essays"
+                href="/programming"
                 class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
             >
-                Essay Samples
+                Programming
             </a>
         </div>
     </div>
 
-    <!-- Creative -->
     <div class="relative group">
-        <button
-            class="text-[20px] text-white py-3.5 px-4 flex items-center gap-1 hover:bg-[rgba(140,179,223,0.7)]"
+        <a
+            href="/filmmaking"
+            target="_self"
+            class="text-[20px] text-white py-3.5 px-4 flex items-center gap-1 hover:bg-[rgba(140,179,223,0.7)] no-underline! hover:no-underline!"
         >
             <span
-                class={`${
-                    ["editing", "coding"].includes(active)
+                class={`no-underline ${
+                    active === "filmmaking"
                         ? "underline underline-offset-8"
                         : ""
                 }`}
             >
-                Creative Endeavors
+                Filmmaking
             </span>
-            <em class="text-[20px] fa fa-caret-down"></em>
-        </button>
-
-        <div class="absolute right-0 hidden min-w-40 bg-[#f9f9f9] shadow-lg group-hover:block z-10">
-            <a
-                href="/editing"
-                class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
-            >
-                Editing Projects
-            </a>
-            <a
-                href="/coding"
-                class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
-            >
-                Coding Projects
-            </a>
-        </div>
+        </a>
     </div>
 </div>
