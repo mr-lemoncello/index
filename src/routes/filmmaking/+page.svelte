@@ -6,18 +6,20 @@
   import Navbar from "$lib/components/Navbar.svelte";
   import Footer from "$lib/components/Footer.svelte";
 
-  type Edit = {
+  type FilmProject = {
     title: string;
     link: string;
     date: string;
     roles: string;
     description: string;
     more: string;
+    runtime: string;
+    camera?: string;
     music: string;
     drive?: string;
   };
 
-  const edits: Edit[] = [
+  const featured: FilmProject[] = [
     {
       title: "Coherence Illusion: The Institutional Regulation of Trans Life",
       link: "https://www.youtube.com/embed/4la1tlvn9to",
@@ -25,17 +27,25 @@
       date: "Apr 24, 2026",
       description: "Original video essay by Noa Ellis",
       more: `Inspired by the prompt: How has institutional language been used to construct, police, and erase gender deviance within 20th century Western medicine, law, and sport?`,
+      runtime: "41 min",
       music: "Music by Lena Raine - Celeste OST",
-      drive: "https://drive.google.com/drive/u/0/folders/1h4UlsxUM6y73vB_uKaJxuICwKf8zIhVj"
+      drive:
+        "https://drive.google.com/drive/u/0/folders/1h4UlsxUM6y73vB_uKaJxuICwKf8zIhVj",
     },
+  ];
+
+  const projects: FilmProject[] = [
     {
       title: "Team 1540 2026 Robot Reveal: Hephaestus",
       link: "https://www.youtube.com/embed/wBAUA4oNouY",
       roles: "Director of Photography",
       date: "Mar 23, 2026",
-      description: "Original robot reveal by Hanya You and Vikas Banerjee Murthy",
+      description:
+        "Original robot reveal by Hanya You and Vikas Banerjee Murthy",
       more: `Showcase of this year's competition robot by FRC team #1540. For more information about our team, visit our website: team1540.org.`,
-      music: "Music by µ-Ziq - Dance 2"
+      runtime: "2 min",
+      camera: "Canon EOS R100",
+      music: "Music by µ-Ziq - Dance 2",
     },
     {
       title: "Requiem of a Suicide",
@@ -44,6 +54,8 @@
       date: "Feb 25, 2026",
       description: "Original short film by Noa Ellis",
       more: `Inspired by the prompt: How does systemic racism and discrimination contribute to the mental health crises within communities of color?`,
+      runtime: "7 min",
+      camera: "iPhone 11",
       music: "Music by Noa Ellis - Film Soundtrack",
     },
     {
@@ -57,6 +69,7 @@
       the necessary considerations for the long-term impacts, or in some cases, 
       intentional sabotage, lead to decades-long instabilities in regions that 
       had not previously been unstable?`,
+      runtime: "5 min",
       music: "Music by Whitesand (Martynas Lau) - My Spirit Is Free (2018)",
     },
     {
@@ -68,6 +81,8 @@
         "Recap of rookie team FRC1844's 2025 season and their main season-robot Private",
       more: `Following the design, creation, and competitive run of FIRST Robotics Competition 
       team 1844: the Eggineers, rookie team of FRC1540: the Flaming Chickens`,
+      runtime: "2 min",
+      camera: "Canon G3X",
       music: "Music by Creo - Unveil (2019)",
     },
     {
@@ -80,6 +95,8 @@
       more: `An introduction to the FIRST Robotics Competition team 1844: the Eggineers, 
       rookie team of FRC1540: the Flaming Chickens; includes interviews 
       with prominent FRC1540 members`,
+      runtime: "3 min",
+      camera: "Canon G3X",
       music: "Music by TheFatRat - Unity (2016)",
     },
     {
@@ -92,6 +109,8 @@
       more: `Following the off-season design, creation, and competition run of 
       FIRST Robotics Competition team 1844: the Eggineers, rookie team of FRC1540 
       and their tournament win at BunnyBots 2025, hosted by FRC1540`,
+      runtime: "5 min",
+      camera: "Canon G3X",
       music: "Music by Thomas Bergersen, Two Steps From Hell - Victory (2017)",
     },
   ];
@@ -106,18 +125,13 @@
 <Navbar active="filmmaking" />
 
 <section class="m-2" id="filmmaking">
-  <h2 class="heading">Filmmaking Portfolio</h2>
-  {#each edits as edit}
-    <Filmmaking
-      title={edit.title}
-      link={edit.link}
-      roles={edit.roles}
-      date={edit.date}
-      description={edit.description}
-      more={edit.more}
-      music={edit.music}
-      drive={edit.drive}
-    />
+  <h2 class="heading">Featured</h2>
+  {#each featured as feature}
+    <Filmmaking {...feature} />
+  {/each}
+  <h2 class="heading">All Projects</h2>
+  {#each projects as project}
+    <Filmmaking {...project} />
   {/each}
 </section>
 
