@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import "lite-youtube-embed/src/lite-yt-embed.css";
 
 @theme {
   --color-aroace-dark-blue: #1b2d48;

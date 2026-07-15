@@ -8,7 +8,7 @@
 
   type FilmProject = {
     title: string;
-    link: string;
+    id: string;
     date: string;
     roles: string;
     description: string;
@@ -22,7 +22,7 @@
   const featured: FilmProject[] = [
     {
       title: "Coherence Illusion: The Institutional Regulation of Trans Life",
-      link: "https://www.youtube.com/embed/4la1tlvn9to",
+      id: "4la1tlvn9to",
       roles: "Writer • Director • Editor",
       date: "Apr 24, 2026",
       description: "Original video essay by Noa Ellis",
@@ -37,7 +37,7 @@
   const projects: FilmProject[] = [
     {
       title: "Team 1540 2026 Robot Reveal: Hephaestus",
-      link: "https://www.youtube.com/embed/wBAUA4oNouY",
+      id: "wBAUA4oNouY",
       roles: "Director of Photography",
       date: "Mar 23, 2026",
       description:
@@ -49,7 +49,7 @@
     },
     {
       title: "Requiem of a Suicide",
-      link: "https://www.youtube.com/embed/wAoBbREm4mY",
+      id: "wAoBbREm4mY",
       roles: "Writer • Director • Director of Photography • Editor",
       date: "Feb 25, 2026",
       description: "Original short film by Noa Ellis",
@@ -60,7 +60,7 @@
     },
     {
       title: "Ink and Blood: The Lines That Divide Us",
-      link: "https://www.youtube.com/embed/S4SFCWFjZcs",
+      id: "S4SFCWFjZcs",
       roles: "Writer • Director • Editor",
       date: "Nov 11, 2025",
       description:
@@ -74,7 +74,7 @@
     },
     {
       title: "1844 FRC 2025 Season Recap",
-      link: "https://www.youtube.com/embed/aNfTetDGJ7g",
+      id: "aNfTetDGJ7g",
       date: "Apr 23, 2025",
       roles: "Director • Director of Photography • Editor",
       description:
@@ -87,7 +87,7 @@
     },
     {
       title: "Meet 1844, The EGGINEERS!",
-      link: "https://www.youtube.com/embed/sk3-40_Vvy0",
+      id: "sk3-40_Vvy0",
       date: "Feb 6, 2025",
       roles: "Director • Director of Photography • Editor",
       description:
@@ -101,7 +101,7 @@
     },
     {
       title: "1844 BunnyBots Recap",
-      link: "https://www.youtube.com/embed/e7vN35rVPeI",
+      id: "e7vN35rVPeI",
       date: "Feb 6, 2025",
       roles: "Director • Director of Photography • Editor",
       description:

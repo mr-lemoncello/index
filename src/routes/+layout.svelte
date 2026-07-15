@@ -2,6 +2,7 @@
 	import file_480 from '$lib/assets/file_480.webp';
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
+    import "lite-youtube-embed";
 </script>
 
 <slot/>

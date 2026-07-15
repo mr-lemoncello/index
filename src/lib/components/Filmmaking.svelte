@@ -1,56 +1,53 @@
 <script lang="ts">
     type Props = {
         title: string;
-        link: string;
+        id: string;
         roles: string;
         date: string;
         description: string;
         more: string;
         runtime: string;
-        camera?: string;
         music: string;
+        camera?: string;
         drive?: string;
     };
 
-    let {
+    const {
         title,
-        link,
+        id,
         roles,
         date,
         description,
         more,
         runtime,
-        camera = "",
         music,
-        drive = "",
+        camera,
+        drive,
     }: Props = $props();
+
+    const panel =
+        "inline-flex flex-row gap-1 justify-between w-full h-auto border-5 border-aroace-dark-blue rounded-lg p-1 mx-3 mb-3 bg-[hsl(215.09_46.09%_22.55%)] flex-background";
+
+    const info =
+        "inline-flex flex-wrap flex-col justify-around h-auto w-auto text-aroace-dark-blue font-[PrestigeElite] text-sm m-2.5 p-2.5 border-5 border-aroace-orange rounded-lg bg-aroace-light-blue";
 </script>
 
 <article class="film">
-    <p class="text-white font-[PrestigeElite] text-xl mb-0 mt-1 pb-0">
+    <p class="mt-1 mb-0 pb-0 font-[PrestigeElite] text-xl text-white">
         {title}
     </p>
 
-    <div
-        class="inline-flex flex-row gap-1 justify-between w-full h-auto
-    border-5 border-aroace-dark-blue rounded-lg p-1 mx-3 mb-3
-  bg-[hsl(215.09_46.09%_22.55%)] flex-background"
-    >
-        <div class="inline-flex flex-col m-0 p-0">
-            <iframe
+    <div class={panel}>
+        <div class="inline-flex flex-col">
+            <lite-youtube
+                videoid={id}
                 {title}
-                class="m-2.5 p-1.25 border-solid bg-aroace-yellow rounded-lg"
-                width="270"
-                height="180"
-                src={link}
-                allow="fullscreen"
-                loading="lazy"
-            >
-            </iframe>
+                class="m-2.5 rounded-lg overflow-hidden"
+            ></lite-youtube>
 
-            {#if drive !== ""}
+            {#if drive}
                 <div
-                    class="m-2.5 p-1.25 border-5 border-aroace-yellow bg-aroace-light-blue rounded-lg"
+                    class="m-2.5 rounded-lg border-5 border-aroace-yellow bg-aroace-light-blue p-1.25"
                 >
                     <a
                         href={drive}
@@ -62,21 +59,21 @@
             {/if}
         </div>
 
-        <div
-            class="inline-flex flex-wrap flex-col justify-around
-    h-auto w-auto text-aroace-dark-blue font-[PrestigeElite] text-sm m-2.5 p-2.5
-    border-5 border-aroace-orange rounded-lg
-  bg-aroace-light-blue"
-        >
+        <div class={info}>
             <strong class="pb-1">{date}</strong>
-            <span class="pb-px"><em>{roles}</em></span>
+            <span class="pb-px">
+                <em>{roles}</em>
+            </span>
             <span class="pb-px">{description}</span>
             <span class="pb-px">{more}</span>
-            <ul class="pb-px mb-0">
+
+            <ul class="mb-0 pb-px">
                 <li>{runtime}</li>
-                {#if camera !== ""}
+
+                {#if camera}
                     <li>{camera}</li>
                 {/if}
+
                 <li>Adobe Premiere Pro</li>
                 <li>{music}</li>
             </ul>
