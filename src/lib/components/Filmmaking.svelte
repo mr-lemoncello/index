@@ -39,11 +39,12 @@
 
     <div class={panel}>
         <div class="inline-flex flex-col">
-            <lite-youtube
-                videoid={id}
-                {title}
-                class="m-2.5 rounded-lg overflow-hidden"
-            ></lite-youtube>
+            <div
+                class="m-2.5 rounded-lg border-5 border-aroace-yellow overflow-hidden"
+            >
+                <lite-youtube videoid={id} class="block w-67.5 h-45"
+                ></lite-youtube>
+            </div>
 
             {#if drive}
                 <div

@@ -1,11 +1,21 @@
 <script lang="ts">
-	import file_480 from '$lib/assets/file_480.webp';
-	import favicon from '$lib/assets/favicon.svg';
-	import '../app.css';
-    import "lite-youtube-embed";
+    import { onMount } from "svelte";
+
+    import file_480 from "$lib/assets/file_480.webp";
+    import favicon from "$lib/assets/favicon.svg";
+    import "../app.css";
+
+    let youtubeReady = false;
+
+    onMount(async () => {
+        await import("lite-youtube-embed");
+        youtubeReady = true;
+    });
 </script>
 
-<slot/>
+{#if youtubeReady}
+    <slot />
+{/if}
 
 <svelte:head>
 	<link rel="image" href={file_480} />
