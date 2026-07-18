@@ -1,4 +1,5 @@
 // add camera for concurrence
+import concurrence from "$lib/assets/concurrence.jpg";
 
 type FilmProject = {
     title: string;
@@ -24,7 +25,7 @@ export const projects: FilmProject[] = [
             "Winner, Best Cinematography - UNCSA FSI Film Festival 2026",
             "Nominee, Best Sound Design - UNCSA FSI Film Festival 2026"
         ],
-        src: "src/lib/assets/ec944633d6-poster copy.jpg",
+        src: concurrence,
         date: "Feature run",
         roles: "Writer • Editor • Composer • Gaffer",
         description: "Original short film by Vikas Banerjee Murthy & Enrique V. Rodriguez",
