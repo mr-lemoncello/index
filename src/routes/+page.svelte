@@ -171,7 +171,7 @@
       </p>
       <p>
         English, ein bisschen Deutsch, 一点普通话.<br />
-        Filmmaker, poet, and composer from Portland, OR.
+        Award-winning filmmaker, published poet, and composer from Portland, OR.
         I also enjoy biking, speech & debate, and playing <em>Celeste</em>.
         Born Aug 2011.
       </p>

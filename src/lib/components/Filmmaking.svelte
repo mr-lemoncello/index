@@ -1,9 +1,11 @@
 <script lang="ts">
     type Props = {
         title: string;
-        id: string;
-        roles: string;
+        awards?: string[];
+        id?: string;
+        src?: string;
         date: string;
+        roles: string;
         description: string;
         more: string;
         runtime: string;
@@ -14,9 +16,11 @@
 
     const {
         title,
+        awards,
         id,
-        roles,
+        src,
         date,
+        roles,
         description,
         more,
         runtime,
@@ -25,26 +29,52 @@
         drive,
     }: Props = $props();
 
+    const alt = $derived(`Poster for ${title}`);
+
     const panel =
-        "inline-flex flex-row gap-1 justify-between w-full h-auto border-5 border-aroace-dark-blue rounded-lg p-1 mx-3 mb-3 bg-[hsl(215.09_46.09%_22.55%)] flex-background";
+        "inline-flex gap-1 justify-between w-full h-auto border-5 border-aroace-dark-blue rounded-lg p-1 mx-3 mb-3 bg-[hsl(215.09_46.09%_22.55%)] flex-background";
 
     const info =
         "inline-flex flex-wrap flex-col justify-around h-auto w-auto text-aroace-dark-blue font-[PrestigeElite] text-sm m-2.5 p-2.5 border-5 border-aroace-orange rounded-lg bg-aroace-light-blue";
 </script>
 
 <article class="film">
-    <p class="mt-1 mb-0 pb-0 font-[PrestigeElite] text-xl text-white">
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">
         {title}
     </p>
 
-    <div class={panel}>
-        <div class="inline-flex flex-col">
-            <div
-                class="m-2.5 rounded-lg border-5 border-aroace-yellow overflow-hidden"
-            >
-                <lite-youtube videoid={id} class="block w-67.5 h-45"
-                ></lite-youtube>
+    {#if awards}
+        <div class="flex-col {panel}">
+            <div class="mt-1.5!">
+                {#each awards as award}
+                    <p
+                        class="text-aroace-dark-blue font-[PrestigeElite] h-auto text-md mx-2.5 mb-2.5! p-2.5 rounded-lg border-5 border-aroace-orange overflow-hidden bg-aroace-light-blue"
+                    >
+                        {award}
+                    </p>
+                {/each}
             </div>
+        </div>
+    {/if}
+
+    <div class="flex-row {panel}">
+        <div class="inline-flex flex-col">
+            {#if id}
+                <div
+                    class="m-2.5 rounded-lg border-5 border-aroace-yellow overflow-hidden"
+                >
+                    <lite-youtube videoid={id} class="block w-67.5 h-45"
+                    ></lite-youtube>
+                </div>
+            {/if}
+
+            {#if src}
+                <img
+                    class="m-2.5 rounded-lg border-5 border-aroace-yellow overflow-hidden"
+                    {src}
+                    {alt}
+                />
+            {/if}
 
             {#if drive}
                 <div
