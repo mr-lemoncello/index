@@ -48,7 +48,7 @@
             <div class="mt-1.5!">
                 {#each awards as award}
                     <p
-                        class="text-aroace-dark-blue font-[PrestigeElite] h-auto text-md mx-2.5 mb-2.5! p-2.5 rounded-lg border-5 border-aroace-orange overflow-hidden bg-aroace-light-blue"
+                        class="text-aroace-dark-blue font-[PrestigeElite] h-auto text-md mx-2.5 mb-2.5! px-2.5 pt-2.5 pb-1 rounded-lg border-5 border-aroace-orange overflow-hidden bg-aroace-light-blue"
                     >
                         {award}
                     </p>
