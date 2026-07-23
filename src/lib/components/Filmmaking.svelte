@@ -12,6 +12,7 @@
         music: string;
         camera?: string;
         drive?: string;
+        multi?: boolean;
     };
 
     const {
@@ -27,6 +28,7 @@
         music,
         camera,
         drive,
+        multi,
     }: Props = $props();
 
     const alt = $derived(`Poster for ${title}`);
@@ -36,6 +38,8 @@
 
     const info =
         "inline-flex flex-wrap flex-col justify-around h-auto w-auto text-aroace-dark-blue font-[PrestigeElite] text-sm m-2.5 p-2.5 border-5 border-aroace-orange rounded-lg bg-aroace-light-blue";
+
+    let extra = $derived(multi === true ? "w-70 h-auto" : "");
 </script>
 
 <article class="film">
@@ -70,7 +74,7 @@
 
             {#if src}
                 <img
-                    class="m-2.5 rounded-lg border-5 border-aroace-yellow overflow-hidden"
+                    class="m-2.5 rounded-lg border-5 border-aroace-yellow overflow-hidden {extra}"
                     {src}
                     {alt}
                 />

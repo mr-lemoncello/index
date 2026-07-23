@@ -1,5 +1,6 @@
 // add camera for concurrence
 import concurrence from "$lib/assets/concurrence.jpg";
+import yeehaw from "$lib/assets/yeehaw.jpg";
 
 type FilmProject = {
     title: string;
@@ -15,6 +16,7 @@ type FilmProject = {
     music: string;
     drive?: string;
     featured: boolean;
+    multi?: true;
 };
 
 export const projects: FilmProject[] = [
@@ -42,6 +44,7 @@ export const projects: FilmProject[] = [
             "Nominee, Best Screenplay - UNCSA FSI Film Festival 2026",
         ],
         id: "se5zF3AFcAo",
+        src: yeehaw,
         date: "Jul 9, 2026",
         roles: "Director",
         description: "Original short film by Enrique V. Rodriguez & Vikas Banerjee Murthy",
@@ -50,6 +53,7 @@ export const projects: FilmProject[] = [
         camera: "Panasonic HG-DVX200",
         music: "Original score by Teresa Gameiro",
         featured: true,
+        multi: true,
     },
     {
         title: "AIrbnb",
