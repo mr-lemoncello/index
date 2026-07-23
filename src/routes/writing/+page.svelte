@@ -1,4 +1,8 @@
 <script lang="ts">
+    import Destination from "$lib/components/Destination.svelte";
+    import StateoftheCreek from "$lib/components/State of the Creek.svelte";
+    import TheShadowsWalkAgain from "$lib/components/The Shadows Walk Again.svelte";
+
     import poetry1 from "$lib/assets/poetry1.webp";
     import poetry1back from "$lib/assets/poetry1back.webp";
     import poetry2 from "$lib/assets/poetry2.webp";
@@ -23,7 +27,7 @@
     import Navbar from "$lib/components/Navbar.svelte";
     import Footer from "$lib/components/Footer.svelte";
 
-    type Book = {
+     type Book = {
         title: string;
         front: string;
         back: string;
@@ -38,7 +42,7 @@
             back: poetry8back,
             pages: "29 pages",
             description:
-                "On ruin, memory, and the fragile persistence of love amid violence and decay",
+                "On ruin, memory, and the persistence of love amid violence and decay",
         },
         {
             title: "Book 7: I Used to Float",
@@ -46,7 +50,7 @@
             back: poetry7back,
             pages: "21 pages",
             description:
-                "On the fragile search for connection and selfhood in a fractured world",
+                "On the search for connection and selfhood in a fractured world",
         },
         {
             title: "Book 6: Bridges in Low Light",
@@ -99,7 +103,14 @@
 
 <Clouds />
 
-<Navbar active="poetry" />
+<Navbar active="writing"/>
+
+<section class="mx-2 mt-2 mb-10" id="published">
+    <h2 class="heading">Published Work</h2>
+    <TheShadowsWalkAgain/>
+    <Destination />
+    <StateoftheCreek />
+</section>
 
 <section class="m-2" id="poetry">
     <h2 class="heading">Poetry Books</h2>
@@ -115,7 +126,7 @@
     {/each}
 </section>
 
-<Footer />
+<Footer/>
 
 <style>
     :global(body)::before {

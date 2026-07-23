@@ -109,7 +109,7 @@
         <p class="no-margin-text">Until we see, not just recall</p>
         <p class="no-margin-text">That anyone can build the wall.</p>
         <p class="no-margin-text">And every age, in turn, must choose</p>
-        <p class="no-margin-text">o fight the fire, or light the fuse.</p>
+        <p class="no-margin-text">To fight the fire, or light the fuse.</p>
         <br />
     </div>
 </div>

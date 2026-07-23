@@ -50,7 +50,7 @@
         >
             <span
                 class={`no-underline ${
-                    ["poetry", "published", "progr"].includes(active)
+                    ["writing", "programming", "music"].includes(active)
                         ? "underline underline-offset-8"
                         : ""
                 }`}
@@ -64,22 +64,22 @@
             class="absolute right-0 hidden min-w-40 bg-[#f9f9f9] shadow-lg group-hover:block z-10"
         >
             <a
-                href="/poetry"
+                href="/writing"
                 class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
             >
-                Poetry Books
-            </a>
-            <a
-                href="/published"
-                class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
-            >
-                Published Work
+                Writing
             </a>
             <a
                 href="/programming"
                 class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
             >
                 Programming
+            </a>
+            <a
+                href="/music"
+                class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
+            >
+                Music
             </a>
         </div>
     </div>

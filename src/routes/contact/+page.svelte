@@ -120,7 +120,7 @@
 >
   <p class="content-normal with-margin-text mb-0">
     Having trouble with the form? Contact me at:
-    <a class="text-aroace-light-blue" href="mailto:vikasarino@gmail.com">
+    <a class="text-hyperlink!" href="mailto:vikasarino@gmail.com">
       vikasarino@gmail.com</a>
   </p>
 </div>

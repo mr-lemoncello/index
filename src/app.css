@@ -6,7 +6,8 @@
   --color-aroace-light-blue: #5faad7;
   --color-aroace-yellow: #e7c600;
   --color-aroace-orange: #e38d00;
-  --custom-grey: #1c1c1e;
+  --color-custom-grey: #1c1c1e;
+  --color-hyperlink: #365F81;
 }
 
 @font-face {
@@ -32,7 +33,7 @@
 .no-margin-text {
   color: white;
   font-family: 'VerilySerif';
-  font-size: 0, 875rem;
+  font-size: 0.875rem;
   margin: 0;
   padding-top: 0;
 }

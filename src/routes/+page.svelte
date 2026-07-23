@@ -96,7 +96,7 @@
 
 <Typewriter />
 
-<Navbar active="home"/>
+<Navbar active="home" />
 
 <FadeInSection>
   <p class="text-gray-400 font-[VerilySerif] mt-3 text-sm">
@@ -129,7 +129,7 @@
               href={link.href}
               target="_blank"
               rel="noopener"
-              class="flex no-underline items-center text-white focus:outline-none focus-visible:ring-2 
+              class="flex no-underline items-center text-white focus:outline-none focus-visible:ring-2
               ring-white/70 rounded-full"
               onmouseenter={(e) =>
                 enter(
@@ -164,43 +164,29 @@
       class="inline-flex flex-wrap flex-col justify-around
     h-auto w-auto text-aroace-dark-blue font-[VerilySerif] text-xs m-2.5 p-2.5
     border-5 border-aroace-orange rounded-lg
-  bg-aroace-light-blue"
+    bg-aroace-light-blue
+  e"
     >
       <p>
-        <strong>Vikas Banerjee Murthy [also mr_lemoncello and Noa Ellis] -- they/them</strong>
+        <strong
+          >Vikas Banerjee Murthy [also mr_lemoncello and Noa Ellis] -- they/them</strong
+        >
       </p>
+      <p>English, 一点普通话, ein bisschen Deutsch. Born Aug 2011.</p>
       <p>
-        English, ein bisschen Deutsch, 一点普通话.<br />
-        Award-winning filmmaker, published poet, and composer from Portland, OR.
-        I also enjoy biking, speech & debate, and playing <em>Celeste</em>.
-        Born Aug 2011.
+        Award-winning
+        <a class="text-hyperlink!" href="/filmmaking">filmmaker</a>,
+        <a class="text-hyperlink!" href="/writing">published poet</a>,
+        <a class="text-hyperlink!" href="/programming">programmer</a>,
+        and <a class="text-hyperlink!" href="/music">composer</a> 
+        from Portland, OR. I also enjoy biking, speech & debate, and playing
+        <em>Celeste</em>.
       </p>
-      <span class="mb-1">some music :3&nbsp;</span><AudioPlayer
-        onSongChange={(title) => (song = title)}
-      />
     </div>
   </div>
 </FadeInSection>
 
-<br/><br/><br/>
-
-<div
-  id="footer"
-  class="flex-col fixed bottom-0 w-auto
-  p-2 m-4 flex-background
-  transition-[width, height] duration-500 ease-in-out
-  hover:scale-105"
-
-  role="tooltip"
-  aria-label="Footer"
-  style:background={bg}
->
-  <p class="content-normal with-margin-text mb-0">
-    <em class="content-normal text-gray-400 font-[VerilySerif] text-sm mb-0"
-      >now playing: {song}</em
-    >
-  </p>
-</div>
+<br /><br /><br />
 
 <style>
   :global(body)::before {
