@@ -118,7 +118,7 @@
         id="file_480"
         aria-label="Photo of Vikas Banerjee Murthy"
       >
-        <img class="block object-cover" src={image480} alt="" />
+        <img class="block object-cover" src={image480} alt="Portrait of Vikas Banerjee Murthy" />
       </div>
       <div class="flex flex-wrap justify-center gap-4">
         {#each links as link}

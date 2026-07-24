@@ -13,25 +13,24 @@
   let message: string = $state("");
   let status: string = $state("");
 
-  async function handleSubmit(e: Event) {
+  function handleSubmit(e: Event) {
     e.preventDefault();
 
-    status = "Sending...";
+    const subject = encodeURIComponent(`Website Contact from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}
+      Email: ${email}
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, message }),
-    });
+      ${message}`,
+    );
 
-    const data = await res.json();
+    window.location.href = `mailto:vikasarino@gmail.com?subject=${subject}&body=${body}`;
 
-    if (res.ok) {
-      status = "Message sent!";
-      name = email = message = "";
-    } else {
-      status = data.error || "Something went wrong";
-    }
+    name = "";
+    email = "";
+    message = "";
+
+    status = "Your email client should have opened.";
   }
 </script>
 
@@ -121,7 +120,8 @@
   <p class="content-normal with-margin-text mb-0">
     Having trouble with the form? Contact me at:
     <a class="text-hyperlink!" href="mailto:vikasarino@gmail.com">
-      vikasarino@gmail.com</a>
+      vikasarino@gmail.com</a
+    >
   </p>
 </div>
 
