@@ -19,9 +19,9 @@
     const subject = encodeURIComponent(`Website Contact from ${name}`);
     const body = encodeURIComponent(
       `Name: ${name}
-      Email: ${email}
+Email: ${email}
 
-      ${message}`,
+${message}`,
     );
 
     window.location.href = `mailto:vikasarino@gmail.com?subject=${subject}&body=${body}`;
