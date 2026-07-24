@@ -57,6 +57,9 @@ export const projects: FilmProject[] = [
     },
     {
         title: "AIrbnb",
+        awards: [
+            "Winner, Best Sound Design - UNCSA FSI Film Festival 2026"
+        ],
         id: "yaIeoz9kkhU",
         date: "Jul 9, 2026",
         roles: "Director of Photography",
