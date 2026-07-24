@@ -27,17 +27,112 @@
 
     <br /><br /><br />
 
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">Jazz</p>
+
     {#each playlist as track, i}
-        <article class="track">
-            <div class={panel}>
-                <button
-                    class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
-                    onclick={() => (current = i)}
-                >
-                    {track.title}
-                </button>
-            </div>
-        </article>
+        {#if track.type === "jazz"}
+            <article class="track">
+                <div class={panel}>
+                    <button
+                        class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
+                        onclick={() => (current = i)}
+                    >
+                        {track.title}
+                    </button>
+                </div>
+            </article>
+        {/if}
+    {/each}
+
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">Live</p>
+
+    {#each playlist as track, i}
+        {#if track.type === "live"}
+            <article class="track">
+                <div class={panel}>
+                    <button
+                        class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
+                        onclick={() => (current = i)}
+                    >
+                        {track.title}
+                    </button>
+                </div>
+            </article>
+        {/if}
+    {/each}
+
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">Scores</p>
+
+    {#each playlist as track, i}
+        {#if track.type === "score"}
+            <article class="track">
+                <div class={panel}>
+                    <button
+                        class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
+                        onclick={() => (current = i)}
+                    >
+                        {track.title}
+                    </button>
+                </div>
+            </article>
+        {/if}
+    {/each}
+
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">
+        Season 3
+    </p>
+
+    {#each playlist as track, i}
+        {#if track.type === "season3"}
+            <article class="track">
+                <div class={panel}>
+                    <button
+                        class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
+                        onclick={() => (current = i)}
+                    >
+                        {track.title}
+                    </button>
+                </div>
+            </article>
+        {/if}
+    {/each}
+
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">
+        Season 2
+    </p>
+
+    {#each playlist as track, i}
+        {#if track.type === "season2"}
+            <article class="track">
+                <div class={panel}>
+                    <button
+                        class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
+                        onclick={() => (current = i)}
+                    >
+                        {track.title}
+                    </button>
+                </div>
+            </article>
+        {/if}
+    {/each}
+
+    <p class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white">
+        Season 1
+    </p>
+
+    {#each playlist as track, i}
+        {#if track.type === "season1"}
+            <article class="track">
+                <div class={panel}>
+                    <button
+                        class="font-[PrestigeElite]! text-sm mt-1 mb-1 pb-0 px-1 text-white hover:text-aroace-yellow! transition-colors cursor-pointer"
+                        onclick={() => (current = i)}
+                    >
+                        {track.title}
+                    </button>
+                </div>
+            </article>
+        {/if}
     {/each}
 </section>
 
