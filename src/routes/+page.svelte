@@ -179,7 +179,8 @@
         <a class="text-hyperlink!" href="/writing">published poet</a>,
         <a class="text-hyperlink!" href="/programming">programmer</a>,
         and <a class="text-hyperlink!" href="/music">composer</a> 
-        from Portland, OR. I also enjoy biking, speech & debate, and playing
+        from Portland, OR, with a focus on ordinary people confronting forces larger than themselves. 
+        I also enjoy biking, speech & debate, and playing
         <em>Celeste</em>.
       </p>
     </div>
