@@ -92,13 +92,25 @@
         >
             <span
                 class={`no-underline ${
-                    active === "filmmaking"
+                    ["filmmaking", "borrowed-time"].includes(active)
                         ? "underline underline-offset-8"
                         : ""
                 }`}
             >
                 Filmmaking
             </span>
+            <em class="text-[20px] fa fa-caret-down"></em>
         </a>
+
+        <div
+            class="absolute right-0 hidden min-w-40 bg-[#f9f9f9] shadow-lg group-hover:block z-10"
+        >
+            <a
+                href="/filmmaking/borrowed-time"
+                class="block px-4 py-3 text-[#1C1C1C]! hover:bg-gray-300 no-underline! hover:no-underline! visited:text-[#1C1C1C]!"
+            >
+                Borrowed Time
+            </a>
+        </div>
     </div>
 </div>

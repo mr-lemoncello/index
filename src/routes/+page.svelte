@@ -2,7 +2,6 @@
   import image480 from "$lib/assets/file_480.webp";
 
   import Particles from "$lib/components/Particles.svelte";
-  import AudioPlayer from "$lib/components/AudioPlayer.svelte";
   import Typewriter from "$lib/components/Typewriter.svelte";
   import FadeInSection from "$lib/components/FadeInSection.svelte";
   import DayNight from "$lib/components/DayNight.svelte";
