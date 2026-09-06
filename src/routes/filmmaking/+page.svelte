@@ -24,7 +24,7 @@
   {/each}
   <a
     class="mt-1 mb-1 pb-0 font-[PrestigeElite] text-xl text-white"
-    href="/fixlmmaking/all-projects">All Projects</a
+    href="/filmmaking/all-projects">All Projects</a
   >
 </section>
 
